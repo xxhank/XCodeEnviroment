@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>testbutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)test&lt;#NameOfButton#&gt;ButtonAction
+{
+    [sut view];
+    
+    assertThat([sut.&lt;#button outlet#&gt; actionsForTarget:sut forControlEvent:UIControlEventTouchUpInside],
+               contains(@"&lt;#selector name#&gt;", nil));
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>17D94DE5-BC5B-49F6-9697-E1D2FE4A354B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Define test ensuring that button has expected action. "sut" is system under test. Uses OCHamcrest.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Test UIButton Action (qualitycoding.org)</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

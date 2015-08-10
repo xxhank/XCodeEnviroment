@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__smart_control</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@interface &lt;#class#&gt; (SmartMap)&lt;SmartControl&gt;
+@property (nonatomic, strong) IBInspectable NSString *modelProperty;///&lt; 对应model的keyPath
+@end
+
+SMART_CONTROL_IMPL(&lt;#class#&gt;)
+- (void) sm_setValue: (id) value
+{
+    &lt;#code here #&gt;
+}
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>472439EB-0BA1-4CE8-BDB2-BF4F8906AD9F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Smart Control</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

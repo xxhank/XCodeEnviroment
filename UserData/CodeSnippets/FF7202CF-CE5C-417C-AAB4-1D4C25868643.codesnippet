@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__list_device_fonts</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSArray *familyNames = [UIFont familyNames];
+
+for(NSUInteger familyIndex = 0; familyIndex &lt; [familyNames count]; ++familyIndex)
+{
+    NSString *familyName = [familyNames objectAtIndex:familyIndex];
+    NSArray  *fontNames  = [UIFont fontNamesForFamilyName:familyName];
+    NSLog(@"Family name: %@", familyName);
+
+    for(NSUInteger fontIndex = 0; fontIndex &lt; [fontNames count]; ++fontIndex)
+    {
+        NSLog(@"\tFont name: %@", [fontNames objectAtIndex:fontIndex]);
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FF7202CF-CE5C-417C-AAB4-1D4C25868643</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>List Device Fonts</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hamcrest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define HC_SHORTHAND
+#import &lt;OCHamcrest/OCHamcrest.h&gt;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D3B7BE53-9A14-42F8-94D9-6B273C29B338</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Import OCHamcrest you build yourself, or pre-built as OS X framework.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Import OCHamcrest (qualitycoding.org)</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

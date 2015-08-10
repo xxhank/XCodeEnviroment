@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__subclass__ddviewcontroller</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)buildData
+{
+    [super buildData];
+}
+
+- (void)buildUI
+{
+    [super buildUI];
+}
+
+- (void)layoutUI
+{
+    [super layoutUI];
+}
+
+- (void)buildAccessbility
+{
+    [super buildAccessbility];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>24676720-61F5-47C0-8CD9-72B434F14F46</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DDViewController Sublcass</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

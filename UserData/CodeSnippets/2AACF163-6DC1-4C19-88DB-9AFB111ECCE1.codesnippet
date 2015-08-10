@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>fetch-data</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (Class&lt;YCRequestModelFetchSupport, NSObjectCast&gt;)requestModelClass
+{
+    return [&lt;#class#&gt; class];
+}
+
+- (id)fetchParamWithBegin:(NSUInteger)begin count:(NSUInteger)count
+{
+    return [&lt;#class#&gt; paramWithBegin:begin count:count];
+}
+
+/// 仅在需要的情况下打开下面的方法
+#if 0
+- (NSArray*)bridgesFromModel:(YCRequestModel*)baseModel
+{
+    &lt;#class#&gt; *model = [&lt;#class#&gt; cast:baseModel];
+    return [super bridgesFromModel:model];
+}
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2AACF163-6DC1-4C19-88DB-9AFB111ECCE1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>请求数据的模板方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>fetch-data</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

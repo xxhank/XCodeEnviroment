@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__log_utility</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifndef YCLog
+#if __has_include(&lt;CocoaLumberjack/CocoaLumberjack.h&gt;)
+#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;
+#import &lt;CocoaLumberjack/DDDispatchQueueLogFormatter.h&gt;
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarn;
+#endif
+#define TTYCOLOR(hexValue) DDMakeColor( ( (hexValue &gt;&gt; 16) &amp; 0xff ), ( (hexValue &gt;&gt; 8) &amp; 0xff ), ( (hexValue &gt;&gt; 0) &amp; 0xff ) )
+#define YCLogStart() \
+setenv("XcodeColors", "YES", 0); \
+[DDLog addLogger:[DDTTYLogger sharedInstance]]; \
+[[DDTTYLogger sharedInstance] setForegroundColor:TTYCOLOR(0x731822) backgroundColor:TTYCOLOR(0x032028) forFlag:DDLogFlagError]; \
+[[DDTTYLogger sharedInstance] setForegroundColor:TTYCOLOR(0x6E7318) backgroundColor:TTYCOLOR(0x032028)  forFlag:DDLogFlagWarning]; \
+[[DDTTYLogger sharedInstance] setForegroundColor:TTYCOLOR(0x176D3C) backgroundColor:TTYCOLOR(0x032028)  forFlag:DDLogFlagInfo]; \
+[[DDTTYLogger sharedInstance] setForegroundColor:TTYCOLOR(0x034048) backgroundColor:TTYCOLOR(0x032028)  forFlag:DDLogFlagDebug]; \
+[[DDTTYLogger sharedInstance] setForegroundColor:TTYCOLOR(0x033028) backgroundColor:TTYCOLOR(0x032028)  forFlag:DDLogFlagVerbose]; \
+[[DDTTYLogger sharedInstance] setColorsEnabled:YES]; \
+[[DDTTYLogger sharedInstance] setLogFormatter:[[DDDispatchQueueLogFormatter alloc] init]];
+
+#define YCLogError    DDLogError
+#define YCLogWarn     DDLogWarn
+#define YCLogInfo     DDLogInfo
+#define YCLogDebug    DDLogDebug
+#define YCLogVerbose  DDLogVerbose
+#else /* if __has_include(&lt; CocoaLumberjack / CocoaLumberjack.h &gt;) */
+#define XCODE_COLORS_ESCAPE "\033["
+#define YCLogErrorFlag      XCODE_COLORS_ESCAPE "fg115,24,34;" XCODE_COLORS_ESCAPE "bg3,32,40;"
+#define YCLogWarnFlag       XCODE_COLORS_ESCAPE "fg110,115,24;" XCODE_COLORS_ESCAPE "bg3,32,40;"
+#define YCLogInfoFlag       XCODE_COLORS_ESCAPE "fg23,109,60;" XCODE_COLORS_ESCAPE "bg3,32,40;"
+#define YCLogDebugFlag      XCODE_COLORS_ESCAPE "fg96,96,96;" XCODE_COLORS_ESCAPE "bg3,32,40;"
+#define YCLogVerboseFlag    XCODE_COLORS_ESCAPE "fg64,64,64;" XCODE_COLORS_ESCAPE "bg3,32,40;"
+
+#define YCFILE  (strrchr(__FILE__, '/') ? : __FILE__) + 1
+#define __YCLog(flag, fmt, ...) printf("%s%s:%d %s %s\n", flag, YCFILE, __LINE__, __func__, (const char*) [[NSString stringWithFormat:fmt,##__VA_ARGS__] UTF8String])
+
+#define YCLogStart()    setenv("XcodeColors", "YES", 0);
+#define YCLogError(fmt, ...)    __YCLog(YCLogErrorFlag, fmt,##__VA_ARGS__)
+#define YCLogWarn(fmt, ...)     __YCLog(YCLogWarnFlag, fmt,##__VA_ARGS__)
+#define YCLogInfo(fmt, ...)     __YCLog(YCLogInfoFlag, fmt,##__VA_ARGS__)
+#define YCLogDebug(fmt, ...)    __YCLog(YCLogDebugFlag, fmt,##__VA_ARGS__)
+#define YCLogVerbose(fmt, ...)  __YCLog(YCLogVerboseFlag, fmt,##__VA_ARGS__)
+#endif /* if __has_include(&lt; CocoaLumberjack / CocoaLumberjack.h &gt;) */
+#ifdef NSLog
+#undef NSLog
+#define NSLog YCLogInfo
+#endif
+#endif /* ifndef YCLog */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B2B25176-40A5-4A11-80EC-BABC47C46D09</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>LEVEL log</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
