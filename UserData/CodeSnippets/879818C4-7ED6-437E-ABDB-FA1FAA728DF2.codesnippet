@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cenum</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> /**
+     &lt;#brief_enum#&gt;
+     
+     - &lt;#enum_case#&gt;: &lt;#desciption#&gt;
+     - &lt;#enum_case#&gt;: &lt;#desciption#&gt;
+     - &lt;#enum_case#&gt;: &lt;#desciption#&gt;
+     - &lt;#enum_case#&gt;: &lt;#desciption#&gt;
+ */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>879818C4-7ED6-437E-ABDB-FA1FAA728DF2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Comment Enum</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
