@@ -3,21 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cmark</string>
+	<string>switch_viewmodel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
 		<string>CodeBlock</string>
-		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#content#&gt;</string>
+	<string>switch &lt;#response#&gt; {
+        case .Error(let error):
+            PKHUD.sharedHUD.contentView = PKHUDTextView(text: error.localizedDescription)
+            PKHUD.sharedHUD.show()
+            PKHUD.sharedHUD.hide(afterDelay: 2.0)
+            break
+
+        case .Result(let result):
+            break
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5EABAD51-3983-43EE-9801-37C85519EC1C</string>
+	<string>FD138220-B8E9-40E1-9A14-D98404F47219</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Comment Mark</string>
+	<string>Switch ViewModel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

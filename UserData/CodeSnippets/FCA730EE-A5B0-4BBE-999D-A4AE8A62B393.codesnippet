@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cmark</string>
+	<string>testcase</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
-		<string>CodeBlock</string>
-		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#content#&gt;</string>
+	<string>func test&lt;#CaseName#&gt;(){
+        &lt;#Code#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5EABAD51-3983-43EE-9801-37C85519EC1C</string>
+	<string>FCA730EE-A5B0-4BBE-999D-A4AE8A62B393</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Comment Mark</string>
+	<string>Test Case</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

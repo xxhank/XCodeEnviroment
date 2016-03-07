@@ -3,21 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cmark</string>
+	<string>@iboutlet_</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
-		<string>CodeBlock</string>
-		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#content#&gt;</string>
+	<string>@IBOutlet weak var &lt;#View#&gt;: &lt;#ViewClass#&gt;!</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5EABAD51-3983-43EE-9801-37C85519EC1C</string>
+	<string>084C5CF4-3D23-4242-A29D-FCB6B34E6F60</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Comment Mark</string>
+	<string>@property -iboutlet-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

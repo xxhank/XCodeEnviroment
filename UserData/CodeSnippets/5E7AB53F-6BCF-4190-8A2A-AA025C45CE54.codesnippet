@@ -3,21 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cmark</string>
+	<string>switch_response</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
 		<string>CodeBlock</string>
-		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#content#&gt;</string>
+	<string>switch response {
+        case .Error(let error):
+            output.&lt;#displaySightDetail#&gt;(ViewModel.Error(error))
+            break
+        case .Result(let result):
+            let viewModel = &lt;#ViewModel#&gt;()
+            output.&lt;#displaySightDetail#&gt;(ViewModel.Result(viewModel))
+            break
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5EABAD51-3983-43EE-9801-37C85519EC1C</string>
+	<string>5E7AB53F-6BCF-4190-8A2A-AA025C45CE54</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Comment Mark</string>
+	<string>Switch Response</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
