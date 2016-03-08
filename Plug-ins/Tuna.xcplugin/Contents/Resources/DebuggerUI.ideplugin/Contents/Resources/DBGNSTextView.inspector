@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   IBNSTextView.inspector
+   InterfaceBuilder
+
+   Created by Kelly Keenan on 11/24/09.
+   Forked for DebuggerUI on 11/12/2013
+   Copyright 2009-2014 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Text">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.textStorage" editable="NO" /><!--This should be attributed="true" again -->
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Text Direction">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.baseWritingDirection">
+                <option-group>
+                    <option title="Natural" value="-1"/>
+                </option-group>
+                <option-group>
+                    <option title="Left to Right" value="0"/>
+                    <option title="Right to Left" value="1"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Orientation">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.layoutOrientation">
+                <option-group>
+                    <option title="Horizontal" value="0"/>
+                    <option title="Vertical" value="1"/>
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Selection">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.selectionGranularity">
+                <option-group>
+                    <option title="Character" value="0"/>
+                    <option title="Word" value="1"/>
+                    <option title="Paragraph" value="2"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Behavior">
+            <property type="dbg-boolean" title="Editable" keyPath="inspectedObjectsController.selection.object.editable"/>
+            <property type="dbg-boolean" title="Selectable" keyPath="inspectedObjectsController.selection.object.selectable"/>
+            <property type="dbg-boolean" title="Field Editor" keyPath="inspectedObjectsController.selection.object.fieldEditor"/>
+        </sliver>
+        <sliver title="Allows">
+            <property type="dbg-boolean" title="Rich Text" keyPath="inspectedObjectsController.selection.object.richText"/>
+            <property type="dbg-boolean" title="Undo" keyPath="inspectedObjectsController.selection.object.allowsUndo"/>
+            <property type="dbg-boolean" title="Graphics" keyPath="inspectedObjectsController.selection.object.importsGraphics"/>
+            <property type="dbg-boolean" title="Image Editing" keyPath="inspectedObjectsController.selection.object.allowsImageEditing"/>
+            <property type="dbg-boolean" title="Non-contiguous Layout" keyPath="inspectedObjectsController.selection.object.allowsNonContiguousLayout"/>
+            <property type="dbg-boolean" title="Background Color Change" keyPath="inspectedObjectsController.selection.object.allowsDocumentBackgroundColorChange"/>
+        </sliver>
+        <sliver title="Uses">
+            <property type="dbg-boolean" title="Font Panel" keyPath="inspectedObjectsController.selection.object.usesFontPanel"/>
+            <property type="dbg-boolean" title="Ruler" keyPath="inspectedObjectsController.selection.object.usesRuler"/>
+        </sliver>
+        <sliver title="Find">
+            <property type="dbg-boolean" title="Find Panel" keyPath="inspectedObjectsController.selection.object.usesFindPanel" />
+            <property type="dbg-boolean" title="Find Bar" keyPath="inspectedObjectsController.selection.object.usesFindBar" />
+            <property type="dbg-boolean" title="Incremental Searching" keyPath="inspectedObjectsController.selection.object.isIncrementalSearchingEnabled" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Display">
+            <property type="dbg-boolean" title="Draws Background" keyPath="inspectedObjectsController.selection.object.drawsBackground"/>
+        </sliver>
+        <sliver title="Text Color">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.textColor"/>
+        </sliver>
+        <sliver title="Background">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.backgroundColor"/>
+        </sliver>
+        <sliver title="Insertion">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.insertionPointColor"/>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Linguistics">
+            <property type="dbg-boolean" title="Continuous Spell Checking" keyPath="inspectedObjectsController.selection.object.continuousSpellCheckingEnabled"/>
+            <property type="dbg-boolean" title="Automatic Spelling Correction" keyPath="inspectedObjectsController.selection.object.automaticSpellingCorrectionEnabled"/>
+            <property type="dbg-boolean" title="Grammar Checking" keyPath="inspectedObjectsController.selection.object.grammarCheckingEnabled"/>
+        </sliver>
+        <sliver title="Substitution">
+            <property type="dbg-boolean" title="Smart Links" keyPath="inspectedObjectsController.selection.object.automaticLinkDetectionEnabled"/>
+            <property type="dbg-boolean" title="Smart Quotes" keyPath="inspectedObjectsController.selection.object.automaticQuoteSubstitutionEnabled"/>
+            <property type="dbg-boolean" title="Smart Dashes" keyPath="inspectedObjectsController.selection.object.automaticDashSubstitutionEnabled"/>
+            <property type="dbg-boolean" title="Data Detectors" keyPath="inspectedObjectsController.selection.object.automaticDataDetectionEnabled"/>
+            <property type="dbg-boolean" title="Text Replacement" keyPath="inspectedObjectsController.selection.object.automaticTextReplacementEnabled"/>
+        </sliver>
+        <sliver title="Editing">
+            <property type="dbg-boolean" title="Smart Insert and Delete" keyPath="inspectedObjectsController.selection.object.smartInsertDeleteEnabled"/>
+        </sliver>
+    </section>
+</slice>
+

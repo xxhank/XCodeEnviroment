@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGScannerDeviceView.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Alex on 2009/07/26.    
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+
+    <section>
+        <sliver title="Allows">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.hasDisplayModeSimple" title="Simple Mode" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.hasDisplayModeAdvanced" title="Advanced Mode" />
+        </sliver>
+    </section>
+
+    <section>
+        <sliver title="Mode">
+            <property type="dbg-enumeration" placeholder="Bezel" keyPath="inspectedObjectsController.selection.object.mode">
+                <option-group>
+                    <option title="Simple" value="0" />
+                    <option title="Advanced" value="1" />
+                </option-group>
+            </property>    
+        </sliver>
+    </section>
+
+    <section>
+        <sliver title="Transfer">
+            <property type="dbg-enumeration" placeholder="Bezel" keyPath="inspectedObjectsController.selection.object.transferMode">
+                <option-group>
+                    <option title="File Based" value="0" />
+                    <option title="Memory Based" value="1" />
+                </option-group>
+            </property>    
+        </sliver>
+    </section>
+    
+    <section>
+        <sliver title="Options">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.displaysDownloadsDirectoryControl" title="Displays scan location" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.displaysPostProcessApplicationControl" title="Displays post process app" />
+        </sliver>
+    </section>
+    
+    <section>
+        <sliver title="Scan">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.scanControlLabel" editable="NO" />
+        </sliver>
+        <sliver title="Overview">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.overviewControlLabel" editable="NO" />
+        </sliver>
+        <sliver title="Document Name">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.documentName" editable="NO" />
+        </sliver>
+    </section>
+    
+</slice>

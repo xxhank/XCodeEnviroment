@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGIKImageView.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 11/19/2013
+    Created by Alex on 2009/07/26.    
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+
+    <section>
+        <sliver title="Options">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.autoresizes" title="Autoresizes" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.supportsDragAndDrop" title="Supports Drag and Drop" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.doubleClickOpensImageEditPanel" title="Double-click Opens Edit Panel" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.editable" title="Editable" />
+        </sliver>
+    </section>
+    
+    <section>
+        <sliver title="Zoom">
+            <property type="string" formatStyle="decimal" minimum="0.0" maximum="1.0" increment="0.05" keyPath="inspectedObjectsController.selection.object.zoomFactor" title="Zoom" editable="NO" />
+        </sliver>
+        <sliver title="Radians">
+            <property type="string" formatStyle="decimal" increment="1.0" keyPath="inspectedObjectsController.selection.object.rotationAngle" title="Radians" editable="NO" />
+        </sliver>
+    </section>
+
+    <section>
+        <sliver title="Background">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.backgroundColor" />
+        </sliver>
+    </section>
+
+</slice>

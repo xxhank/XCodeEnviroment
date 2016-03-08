@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ DBG Object Inspector
+ 
+ Created by Troy Koelling on 12/09/2013
+ Copyright 2009-2014 Apple Inc. All rights reserved.
+ -->
+
+<slice>
+    <section>
+        <sliver title="Class Name">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.representedObjectClassNameForDisplay" editable="NO"/>
+        </sliver>
+        <sliver title="Address" >
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.inferiorPointer" editable="NO"/>
+        </sliver>
+    </section>
+</slice>               

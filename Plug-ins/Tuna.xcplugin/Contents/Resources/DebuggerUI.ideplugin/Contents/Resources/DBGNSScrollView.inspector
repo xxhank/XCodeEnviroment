@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    NSScrollView.inspector
+    InterfaceBuilder
+
+    Created by Kelly Keenan on 11/6/09.    
+    Adapted for DebuggerUI by Troy Koelling on 11/18/2013
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+    <section>
+        <sliver title="Border Type">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.borderType">
+                <option-group>
+                    <option title="None" value="0" />
+                    <option title="Line" value="1" />
+                    <option title="Bezel" value="2" />
+                    <option title="Ridge" value="3" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Scroller Knobs">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.scrollerKnobStyle">
+                <option-group>
+                    <option title="Default Style" value="0"/>
+                    <option title="Dark Style" value="1"/>
+                    <option title="Light Style" value="2"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Find Bar">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.findBarPosition">
+                <option-group>
+                    <option title="Position Above Ruler" value="0"/>
+                    <option title="Position Above Content" value="1"/>
+                    <option title="Position Below Content" value="2"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Background">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.backgroundColor" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.drawsBackground" title="Draw Background" />
+        </sliver>           
+    </section>
+    <section>
+        <sliver title="Horizontal">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.horizontalScrollElasticity">
+                <option-group>
+                    <option title="Automatic Elasticity" value="0"/>
+                    <option title="No Elasticity" value="1"/>
+                    <option title="Elasticity Allowed" value="2"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Vertical">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.verticalScrollElasticity">
+                <option-group>
+                    <option title="Automatic Elasticity" value="0"/>
+                    <option title="No Elasticity" value="1"/>
+                    <option title="Elasticity Allowed" value="2"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver>
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.usesPredominantAxisScrolling" title="Predominant Axis Scrolling" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Line Scroll X">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.horizontalLineScroll" title="Horizontal" editable="NO" />
+        </sliver>
+        <sliver title="Y">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.verticalLineScroll" title="Vertical" editable="NO" />
+        </sliver>
+        <sliver title="Page Scroll X">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.horizontalPageScroll" title="Horizontal" editable="NO" />
+        </sliver>
+        <sliver title="Y">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.verticalPageScroll" title="Vertical" editable="NO" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Behavior">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.copiesOnScroll">
+                <option-group>
+                    <option title="Copies On Scroll" value="1"/>
+                    <option title="Doesn't Copy On Scroll" value="0"/>
+                </option-group>
+            </property>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.hasHorizontalScroller">
+                <option-group>
+                    <option title="Shows Horizontal Scroller" value="1"/>
+                    <option title="Doesn't Show Horizontal Scroller" value="0"/>
+                </option-group>
+            </property>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.hasVerticalScroller">
+                <option-group>
+                    <option title="Shows Vertical Scroller" value="1"/>
+                    <option title="Doesn't Show Vertical Scroller" value="0"/>
+                </option-group>
+            </property>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.autohidesScrollers">
+                <option-group>
+                    <option title="Automatically Hides Scroller" value="1"/>
+                    <option title="Always Shows Scroller" value="0"/>
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+    <section>
+        <sliver>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.allowsMagnification" default="NO">
+                <option-group>
+                    <option title="Magnification Allowed" value="1"/>
+                    <option title="Magnification Not Allowed" value="0"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Minimum">
+            <property type="string" placeholder="Loading…" formatStyle="decimal" title="Minimum" keyPath="inspectedObjectsController.selection.object.minMagnification" editable="NO" />
+        </sliver>
+        <sliver title="Maximum">
+            <property type="string" placeholder="Loading…" formatStyle="decimal" title="Maximum" keyPath="inspectedObjectsController.selection.object.maxMagnification" editable="NO" />
+        </sliver>
+    </section>
+</slice>

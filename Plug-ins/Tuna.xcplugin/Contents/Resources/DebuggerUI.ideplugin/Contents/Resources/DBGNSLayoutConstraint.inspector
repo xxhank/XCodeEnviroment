@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGNSLayoutConstraint.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 3/17/2014
+    Created by Kelly Keenan on 11/6/09.    
+    Copyright 2009-2014 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Address" >
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.inferiorPointer" editable="NO"/>
+        </sliver>
+        
+        <sliver title="First Item">
+            <property type="string" keyPath="inspectedObjectsController.selection.firstItem.representedObjectClassNameForDisplay" editable="NO" />
+        </sliver>
+        <sliver title="Relation" >
+            <property type="dbg-enumeration" title="Relation" keyPath="inspectedObjectsController.selection.object.relation">
+                <option-group>
+                    <option title="Less Than or Equal" value="-1" />
+                    <option title="Equal" value="0" />
+                    <option title="Greater Than or Equal" value="1" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Second Item" visibleKeyPath="inspectedObjectsController.selection.object.dbgInspectedHasSecondItem">
+            <property type="string" keyPath="inspectedObjectsController.selection.secondItem.representedObjectClassNameForDisplay" editable="NO" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Multiplier" >
+            <property type="string" keyPath="inspectedObjectsController.selection.object.multiplier" editable="NO" />
+        </sliver>
+        <sliver title="Constant">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.constant" editable="NO" />
+        </sliver>
+        <sliver title="Priority">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.priority" editable="NO" />
+        </sliver>
+    </section>
+    
+</slice>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    NSToolbarItem.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+    Created by Kelly Keenan on 11/6/09.    
+    Copyright 2009-2014 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Image">
+            <property type="dbg-image" keyPath="inspectedObjectsController.selection.object.image" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Label">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.label" editable="NO" />
+        </sliver>
+        <sliver title="Palette Label">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.paletteLabel" editable="NO" />
+        </sliver>
+        <sliver title="Tag">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.tag" editable="NO" />
+        </sliver>
+        <sliver title="Identifier">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.itemIdentifier" allowsNilValues="true" editable="NO" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Priority">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.visibilityPriority" editable="NO" />
+        </sliver>
+        <sliver title="Behavior">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.autovalidates">
+                <option-group>
+                    <option title="Autovalidates Items" value="1"/>
+                    <option title="No Autovalidation" value="0"/>
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Minimum Width">
+            <property type="string" title="Width" keyPath="inspectedObjectsController.selection.object.dbgInspectedMinSizeWidth" editable="NO" />
+        </sliver>
+        <sliver title="Height">
+            <property type="string" title="Height" keyPath="inspectedObjectsController.selection.object.dbgInspectedMinSizeHeight" editable="NO" />
+        </sliver>
+        <sliver title="Maximum Width">
+            <property type="string" title="Width" keyPath="inspectedObjectsController.selection.object.dbgInspectedMaxSizeWidth" editable="NO" />
+        </sliver>
+        <sliver title="Height">
+            <property type="string" title="Height" keyPath="inspectedObjectsController.selection.object.dbgInspectedMaxSizeHeight" editable="NO" />
+        </sliver>
+
+    </section>
+</slice>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGPDFThumbnailView.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Rob Marini on 2010/08/2
+    Copyright 2010-2013 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Thumb Width">
+            <property type="string" title="Width" formatStyle="integer" minimum="1" keyPath="inspectedObjectsController.selection.object.dbgThumbnailSizeWidth" editable="NO"/>
+        </sliver>
+        <sliver title="Height">
+            <property type="string" title="Height" formatStyle="integer" minimum="1" keyPath="inspectedObjectsController.selection.object.dbgThumbnailSizeHeight" editable="NO"/>
+        </sliver>
+        <sliver title="Columns">
+            <property type="string" title="Maximum" formatStyle="integer" minimum="0" keyPath="inspectedObjectsController.selection.object.maximumNumberOfColumns" editable="NO"/>
+        </sliver>
+        <sliver title="Options">
+            <property type="dbg-boolean" title="Allows Dragging" keyPath="inspectedObjectsController.selection.object.allowsDragging"/>
+        </sliver>
+    </section>
+</slice>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   DBGNSTabView.inspector
+   DebuggerUI
+
+   Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+   Created by Kelly Keenan on 12/8/09.
+   Copyright 2009-2014 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Selected Index">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.selectedTabViewItem_index" editable="NO" />
+        </sliver>
+        <sliver title="Tabs">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.numberOfTabViewItems" editable="NO" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Style">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.tabViewType">
+                <option-group>
+                    <option title="Top tabs" value="0" />
+                    <option title="Left tabs" value="1" />
+                    <option title="Bottom tabs" value="2" />
+                    <option title="Right tabs" value="3" />
+                    <option title="Tabless" value="6" />
+                    <option title="Tabless with bezel" value="4" />
+                    <option title="Tabless with line" value="5" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Display">
+            <property type="dbg-boolean" title="Truncates Labels" keyPath="inspectedObjectsController.selection.object.allowsTruncatedLabels" />
+            <property type="dbg-boolean" title="Draws Background" keyPath="inspectedObjectsController.selection.object.drawsBackground" />
+        </sliver>
+        <sliver title="Font">
+            <property type="dbg-font" keyPath="inspectedObjectsController.selection.object.font" title="Font" />
+        </sliver>
+        <sliver title="Size">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.controlSize">
+                <option-group>
+                    <option title="Regular" value="0" />
+                    <option title="Small" value="1" />
+                    <option title="Mini" value="2" />
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+</slice>

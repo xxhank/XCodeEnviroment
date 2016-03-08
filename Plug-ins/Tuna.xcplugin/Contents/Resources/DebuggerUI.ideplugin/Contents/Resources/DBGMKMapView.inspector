@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   DBGMKMapView.inspector
+   DebuggerUI
+
+   Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+   Copyright 2013 Apple Inc. All rights reserved.
+-->
+<slice>
+    <section>
+        <sliver title="Type">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.mapType">
+                <option-group>
+                    <option title="Standard" value="0"/>
+                    <option title="Satellite" value="1"/>
+                    <option title="Hybrid" value="2"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Behavior">
+            <property type="dbg-boolean" title="Shows User Location" keyPath="inspectedObjectsController.selection.object.showsUserLocation"/>
+        </sliver>
+        <sliver title="Allows">
+            <property type="dbg-boolean" title="Zooming" keyPath="inspectedObjectsController.selection.object.zoomEnabled"/>
+            <property type="dbg-boolean" title="Scrolling" keyPath="inspectedObjectsController.selection.object.scrollEnabled"/>
+            <property type="dbg-boolean" title="Rotating" keyPath="inspectedObjectsController.selection.object.rotateEnabled"/>
+            <property type="dbg-boolean" title="3D Perspective" keyPath="inspectedObjectsController.selection.object.pitchEnabled"/>
+        </sliver>
+    </section>
+</slice>
+

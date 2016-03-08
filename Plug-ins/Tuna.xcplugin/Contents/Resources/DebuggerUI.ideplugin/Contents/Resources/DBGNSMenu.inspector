@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    NSMenu.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+    Created by Kelly Keenan on 11/23/09.    
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+    <section>
+        <sliver title="Title">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.title" editable="NO"/>
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.autoenablesItems" title="Auto Enables Items"/>
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.showsStateColumn" title="Shows State Column"/>
+        </sliver>
+        <sliver title="Layout" minimumRequiredRuntimeOSVersion="101100">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.userInterfaceLayoutDirection">
+                <option-group>
+                    <option value="-1" title="Default"/>
+                    <option value="0" title="Left To Right"/>
+                    <option value="1" title="Right To Left"/>
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+</slice>

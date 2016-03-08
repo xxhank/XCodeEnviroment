@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   IBNSSplitView.inspector
+   InterfaceBuilder
+
+   Created by Kelly Keenan on 11/25/09.
+    Adapted for DebuggerUI by Troy Koelling on 11/18/2013
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Autosave">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.autosaveName" editable="NO" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Style">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.dividerStyle">
+                <option-group>
+                    <option title="Thick divider" value="1" />
+                    <option title="Thin divider" value="2" />
+                    <option title="Pane splitter" value="3" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Arrange">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.vertical">
+                <option-group>
+                    <option title="Left to right" value="1" />
+                    <option title="Top to bottom" value="0" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Divider Color">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.dividerColor">
+            </property>
+        </sliver>
+        <sliver title="Divider Thickness">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.dividerThickness" editable="NO" >
+            </property>
+        </sliver>
+    </section>
+</slice>
+

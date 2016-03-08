@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   DBGNSTokenField.inspector
+   DebuggerUI
+
+   Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+   Created by Kelly Keenan on 11/24/09.
+   Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Token Style">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.tokenStyle">
+                <option-group>
+                    <option value="0" title="Default"/>
+                    <option value="1" title="Plain"/>
+                    <option value="2" title="Rounded"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Delay">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.completionDelay" editable="NO"/>
+        </sliver>
+    </section>
+</slice>

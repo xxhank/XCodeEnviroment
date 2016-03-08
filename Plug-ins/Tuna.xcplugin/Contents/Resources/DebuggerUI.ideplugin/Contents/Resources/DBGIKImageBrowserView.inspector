@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    IKImageBrowserView.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Alex on 2009/07/26.    
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+
+    <section>
+        <sliver title="Shadowed">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.cellsStyleMask" bits="1" title="Shadowed" />
+        </sliver>
+        <sliver title="Outlined">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.cellsStyleMask" bits="2" title="Outlined" />
+        </sliver>
+        <sliver title="Titled">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.cellsStyleMask" bits="4" title="Titled" />
+        </sliver>
+        <sliver title="Subtitled">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.cellsStyleMask" bits="8" title="Subtitled" />
+        </sliver>
+    </section>
+
+    <section>
+        <sliver title="Allows">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.allowsMultipleSelection" title="Multiple Selection" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.allowsEmptySelection" title="Empty Selection" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.allowsReordering" title="Reordering" />
+        </sliver>
+    </section>
+
+    <section>
+        <sliver title="Display">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.constrainsToOriginalSize" title="Constrains to Original Size" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.animates" title="Animates" />
+        </sliver>
+    </section>
+
+    <section>
+        <sliver title="Zoom">
+            <property type="string" formatStyle="decimal" minimum="0.0" maximum="1.0" increment="0.05" keyPath="inspectedObjectsController.selection.object.zoomValue" editable="NO" />
+        </sliver>
+    </section>
+
+</slice>

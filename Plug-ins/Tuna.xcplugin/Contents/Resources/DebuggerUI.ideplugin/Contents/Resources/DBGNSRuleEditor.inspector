@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGNSRuleEditor.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Kelly Keenan on 11/6/09.    
+    Copyright 2009-2014 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <sliver title="Nesting">
+        <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.nestingMode">
+            <option-group>
+                <option title="Single" value="0" />
+                <option title="List" value="1" />
+                <option title="Compound" value="2" />
+                <option title="Simple" value="3" />
+            </option-group>
+        </property>
+    </sliver>
+    <sliver title="Format File">
+        <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.formattingStringsFilename" editable="NO" />
+    </sliver>
+    <sliver title="Options">
+        <property type="dbg-boolean" title="Can Remove All Rows" keyPath="inspectedObjectsController.selection.object.canRemoveAllRows" />
+    </sliver>
+    <sliver title="Row Height">
+        <property type="string" keyPath="inspectedObjectsController.selection.object.rowHeight" editable="NO" />
+    </sliver>
+
+</slice>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGWebView.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Rob Marini on 2010/07/29
+    Copyright 2010-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+    <section>
+        <sliver title="Identifier">
+            <property type="string" title="Identifier" keyPath="inspectedObjectsController.selection.object.preferencesIdentifier" editable="NO"/>
+        </sliver>
+        <sliver title="Default Font Size">
+            <property type="string" title="Default Size" formatStyle="integer" minimum="1" keyPath="inspectedObjectsController.selection.object.dbgPreferenceDefaultFontSize" editable="NO"/>
+        </sliver>
+        <sliver title="Default Fixed Font">
+            <property type="string" title="Fixed Size" formatStyle="integer" minimum="1" keyPath="inspectedObjectsController.selection.object.dbgPreferenceDefaultFixedFontSize" editable="NO"/>
+        </sliver>
+        <sliver title="Default Minimum Font">
+            <property type="string" title="Minimum Size" formatStyle="integer" minimum="1" keyPath="inspectedObjectsController.selection.object.dbgPreferenceMinimumFontSize" editable="NO"/>
+        </sliver>
+        <sliver title="Options">
+            <property type="dbg-boolean" title="Enable Plug-Ins" keyPath="inspectedObjectsController.selection.object.dbgPreferenceArePlugInsEnabled"/>
+            <property type="dbg-boolean" title="Enable JavaScript" keyPath="inspectedObjectsController.selection.object.dbgPreferenceJavaScriptEnabled"/>
+            <property type="dbg-boolean" title="Enable Java" keyPath="inspectedObjectsController.selection.object.dbgPreferenceJavaEnabled"/>
+            <property type="dbg-boolean" title="Has Back/Forward List" keyPath="inspectedObjectsController.selection.object.backForwardList"/>
+            <property type="dbg-boolean" title="Autoload Images" keyPath="inspectedObjectsController.selection.object.dbgPreferenceLoadsImagesAutomatically"/>
+            <property type="dbg-boolean" title="Enable Animated Images" keyPath="inspectedObjectsController.selection.object.dbgPreferenceAllowsAnimatedImages"/>
+            <property type="dbg-boolean" title="Enable Animated Image Looping" keyPath="inspectedObjectsController.selection.object.dbgPreferenceAllowsAnimatedImageLooping"/>
+            <property type="dbg-boolean" title="Allow Popups" keyPath="inspectedObjectsController.selection.object.dbgPreferenceJavaScriptCanOpenWindowsAutomatically"/>
+        </sliver>
+    </section>
+</slice>

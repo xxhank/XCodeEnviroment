@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   DBGNSSlider.inspector
+   DebuggerUI
+
+   Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+   Created by Kelly Keenan on 11/25/09.
+   Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Style">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.sliderType" >
+                <option-group>
+                    <option title="Circular" value="1" />
+                    <option title="Linear" value="0" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Tick Marks">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.tickMarkPosition">
+                <option-group>
+                    <option title="Position Above" value="1" />
+                    <option title="Position Below" value="0" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Tick Count">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.numberOfTickMarks" editable="NO" />
+        </sliver>
+        <sliver>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.allowsTickMarkValuesOnly">
+                <option-group>
+                    <option title="Only stop on tick marks" value="1"/>
+                    <option title="Continuous values" value="0"/>
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Min Value">
+            <property type="string" placeholder="Loading…" formatStyle="decimal" title="Minimum" keyPath="inspectedObjectsController.selection.object.minValue" editable="NO" />
+        </sliver>
+        <sliver title="Current Value">
+            <property type="string" placeholder="Loading…" formatStyle="decimal" title="Current" keyPath="inspectedObjectsController.selection.object.doubleValue" editable="NO" />
+        </sliver>
+        <sliver title="Max Value">
+            <property type="string" placeholder="Loading…" formatStyle="decimal" title="Maximum" keyPath="inspectedObjectsController.selection.object.maxValue" editable="NO" />
+        </sliver>
+    </section>
+</slice>

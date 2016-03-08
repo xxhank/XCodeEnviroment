@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    IBNSComboBox.inspector
+    InterfaceBuilder
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Kelly Keenan on 11/6/09.
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver title="Items">
+            <property type="array" objectType="string" defaultValue="Item" keyPath="inspectedObjectsController.selection.object.dbgInspectedCell.objectValues" />
+        </sliver>
+        <sliver title="Visible Items">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.dbgInspectedCell.numberOfVisibleItems" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Content">
+            <property type="dbg-boolean" title="Autocompletes" keyPath="inspectedObjectsController.selection.object.dbgInspectedCell.completes" />
+            <property type="dbg-boolean" title="Uses Data Source" keyPath="inspectedObjectsController.selection.object.dbgInspectedCell.usesDataSource" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Display">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.dbgInspectedCell.buttonBordered">
+                <option-group>
+                    <option title="Is Bordered" value="1"/>
+                    <option title="Not Bordered" value="0"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Font">
+            <property type="dbg-font" keyPath="inspectedObjectsController.selection.object.dbgInspectedCell.font" />
+        </sliver>
+    </section>
+</slice>

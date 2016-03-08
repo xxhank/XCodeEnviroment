@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ DBGNSOpenGLView.inspector
+ DebuggerUI
+ 
+ Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+ Created by Kelly Keenan on 11/09/09.
+ Copyright 2009-2013 Apple Inc. All rights reserved.
+ -->
+<slice>
+    <section>
+        <!-- This object obviously has a lot more, but it's not clear how we can get stuff out. Punting for now. -->
+        <sliver title="Virtual Screens">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.numberOfVirtualScreens" editable="NO" />
+        </sliver>
+    </section>
+</slice>

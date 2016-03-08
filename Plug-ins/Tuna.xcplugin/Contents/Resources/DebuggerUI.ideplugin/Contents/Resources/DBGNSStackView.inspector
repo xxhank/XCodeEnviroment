@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ DBGNSStackView.inspector
+ DebuggerUI
+ 
+ Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+ Created by Taylor Kelly on 05/20/13.
+ Copyright 2013-2014 Apple Inc. All rights reserved.
+ -->
+
+<slice>
+    <section>
+        <sliver title="Orientation">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.orientation">
+                <option-group>
+                    <option title="Horizontal" value="0" />
+                    <option title="Vertical" value="1" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Alignment">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.alignment">
+                <option-group>
+                    <option title="Left"     value="1" />
+                    <option title="Right"    value="2" />
+                    <option title="Top"      value="3" />
+                    <option title="Bottom"   value="4" />
+                    <option title="Leading"  value="5" />
+                    <option title="Trailing" value="6" />
+                    <option title="Width"    value="7" />
+                    <option title="Hight"    value="8" />
+                    <option title="Center X" value="9" />
+                    <option title="Center Y" value="10" />
+                    <option title="Last Baseline" value="11" />
+                    <option title="First Baseline" value="12" />
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Distribution" minimumRequiredRuntimeOSVersion="101100">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.distribution">
+                <option-group>
+                    <option title="Use Gravity Areas"   value="-1" />
+                    <option title="Fill"                value="0" />
+                    <option title="Fill Equally"        value="1" />
+                    <option title="Fill Proportionally" value="2" />
+                    <option title="Equal Spacing"       value="3" />
+                    <option title="Equal Centering"     value="4" />
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Spacing">
+            <property type="string" placeholder="Loading…" formatStyle="decimal" keyPath="inspectedObjectsController.selection.object.spacing" editable="NO" />
+            <property type="dbg-boolean" title="Has Equal Spacing" keyPath="inspectedObjectsController.selection.object.hasEqualSpacing" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Edge Insets Top">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedEdgeInsets_top" editable="NO"/>
+        </sliver>
+        <sliver title="Left">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedEdgeInsets_left" editable="NO"/>
+        </sliver>
+        <sliver title="Bottom">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedEdgeInsets_bottom" editable="NO"/>
+        </sliver>
+        <sliver title="Right">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedEdgeInsets_right" editable="NO"/>
+        </sliver>
+    </section>
+</slice>

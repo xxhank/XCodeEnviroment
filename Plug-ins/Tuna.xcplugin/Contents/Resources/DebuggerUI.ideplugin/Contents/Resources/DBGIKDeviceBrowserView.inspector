@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGDeviceBrowserView.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Alex on 2009/07/26.    
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+
+    <section>
+        <sliver title="Options">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.displaysLocalCameras" title="Local Cameras" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.displaysNetworkCameras" title="Network Cameras" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.displaysLocalScanners" title="Local Scanners" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.displaysNetworkScanners" title="Network Scanners" />
+        </sliver>
+    </section>
+
+    <section>
+        <sliver title="Mode">
+            <property type="dbg-enumeration" placeholder="Bezel" keyPath="inspectedObjectsController.selection.object.mode">
+                <option-group>
+                    <option title="List View" value="0" />
+                    <option title="Outline View" value="1" />
+                    <option title="Icon View" value="2" />
+                </option-group>
+            </property>    
+        </sliver>
+    </section>
+
+</slice>

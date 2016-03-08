@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ DBGNSBrowser.inspector
+ DebuggerUI
+ 
+ Adapted for DebuggerUI by Troy Koelling on 11/19/2013
+ Created by Kelly Keenan on 11/6/09.
+ Copyright 2009-2014 Apple Inc. All rights reserved.
+ -->
+
+<slice>
+    <section>
+        <sliver title="Prefs Name">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.columnsAutosaveName" editable="NO" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Max Cols">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.maxVisibleColumns" editable="NO" />
+            <property type="dbg-boolean" title="Titles" keyPath="inspectedObjectsController.selection.object.titled" />
+            <property type="dbg-boolean" title="Separators" keyPath="inspectedObjectsController.selection.object.separatesColumns" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Selection">
+            <property type="dbg-boolean" title="Multiple" keyPath="inspectedObjectsController.selection.object.allowsMultipleSelection" />
+            <property type="dbg-boolean" title="Empty" keyPath="inspectedObjectsController.selection.object.allowsEmptySelection" />
+            <property type="dbg-boolean" title="Branch" keyPath="inspectedObjectsController.selection.object.allowsBranchSelection" />
+        </sliver>
+        <sliver title="Navigation">
+            <property type="dbg-boolean" title="Allow Type Selection" keyPath="inspectedObjectsController.selection.object.allowsTypeSelect" />
+            <property type="dbg-boolean" title="Arrows Send Action" keyPath="inspectedObjectsController.selection.object.sendsActionOnArrowKeys" />
+            <property type="dbg-boolean" title="Horizontal Scroller" keyPath="inspectedObjectsController.selection.object.hasHorizontalScroller" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Column Sizing">
+            <property type="dbg-enumeration" placeholder="Column Resizing Type" keyPath="inspectedObjectsController.selection.object.columnResizingType">
+                <option-group>
+                    <option title="Automatic Sizing" value="1" />
+                    <option title="User Sizing" value="2" />
+                    <option title="No Sizing" value="0" />
+                </option-group>
+            </property>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.prefersAllColumnUserResizing">
+                <option-group>
+                    <option title="Prefers Uniform Column Widths" value="1"/>
+                    <option title="Individual Column Sizing" value="0"/>
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+</slice>

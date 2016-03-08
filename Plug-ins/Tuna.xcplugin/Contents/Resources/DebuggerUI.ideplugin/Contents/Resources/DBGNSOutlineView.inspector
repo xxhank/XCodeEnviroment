@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ IBNSOutlineView.inspector
+ InterfaceBuilder
+ 
+ Created by Kelly Keenan on 11/09/09.
+ Adapted for DebuggerUI by Troy Koelling on 11/19/2013
+ Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+    <section>
+        <sliver title="Delegate">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.delegate" placeholder="Loading…" editable="NO" /> <!-- replace with custom property which knows how to jump to the file in Xcode -->
+        </sliver>
+        <sliver title="Data Source">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dataSource" placeholder="Loading…" editable="NO" /> <!-- replace with custom property which knows how to jump to the file in Xcode -->
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Indentation">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.indentationPerLevel" minimum="0" editable="NO" />
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.indentationMarkerFollowsCell" title="Indentation Follows Cells" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Autosave">
+            <property type="dbg-boolean" keyPath="inspectedObjectsController.selection.object.autosaveExpandedItems" title="Autosave Expanded Items" />
+        </sliver>
+        <sliver title="Layout">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.userInterfaceLayoutDirection" title="Layout Direction">
+                <option-group>
+                    <option title="Left to Right" value="0"/>
+                    <option title="Right to Left" value="1"/>
+                </option-group>
+            </property>
+        </sliver>
+    </section>    
+</slice>

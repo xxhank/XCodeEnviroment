@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    NSToolbar.inspector
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+    Created by Kelly Keenan on 11/6/09.    
+    Copyright 2009-2013 Apple Inc. All rights reserved.
+-->
+<slice>
+    <section>
+        <sliver title="Selected Item">
+            <property type="string" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.selectedItemIdentifier" editable="NO" />
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Display">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.displayMode">
+                <option-group>
+                    <option title="Icon and Label" value="1" />
+                    <option title="Icon Only" value="2" />
+                    <option title="Label Only" value="3" />
+                </option-group>
+            </property>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.visible">
+                <option-group>
+                    <option title="Is Visible" value="1"/>
+                    <option title="Not Visible" value="0"/>
+                </option-group>
+            </property>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.allowsUserCustomization">
+                <option-group>
+                    <option title="Is Customizable" value="1"/>
+                    <option title="Not Customizable" value="0"/>
+                </option-group>
+            </property>
+            <property type="dbg-boolean" title="Separator" keyPath="inspectedObjectsController.selection.object.showsBaselineSeparator" />
+        </sliver>
+        <sliver title="Size">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.sizeMode">
+                <option-group>
+                    <option title="Default" value="0" />
+                    <option title="Regular" value="1" />
+                    <option title="Small" value="2" />
+                </option-group>
+            </property>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Autosave">
+            <property type="dbg-boolean" title="Autosaves Configuration" keyPath="inspectedObjectsController.selection.object.autosavesConfiguration" />
+        </sliver>
+    </section>
+</slice>

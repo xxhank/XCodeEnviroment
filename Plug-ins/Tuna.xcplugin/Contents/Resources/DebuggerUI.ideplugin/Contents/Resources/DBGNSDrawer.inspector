@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+//
+//  DBGNSDrawer.inspector
+//  DebuggerUI
+//
+//  Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+//  Created by Joey Hagedorn on 3/30/10.
+//  Copyright 2010-2014 Apple Inc. All rights reserved.
+//
+-->
+
+<slice>
+    <section>
+        <sliver title="Edge">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.preferredEdge">
+                <option-group>
+                    <option value="3" title="Top"/>
+                    <option value="1" title="Bottom"/>
+                    <option value="0" title="Left"/>
+                    <option value="2" title="Right"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Content Width">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedContentSize_width" editable="NO"/>
+        </sliver>
+        <sliver title="Height">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedContentSize_height" editable="NO"/>
+        </sliver>
+        <sliver title="Offset Leading">
+            <property type="string" title="Leading" keyPath="inspectedObjectsController.selection.object.leadingOffset" editable="NO"/>
+        </sliver>
+        <sliver title="Trailing">
+            <property type="string" title="Trailing" keyPath="inspectedObjectsController.selection.object.trailingOffset" editable="NO"/>
+        </sliver>
+        <sliver title="Content Min Width">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedMinContentSize_width" editable="NO"/>
+        </sliver>
+        <sliver title="Min Height">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedMinContentSize_height" editable="NO"/>
+        </sliver>
+        <sliver title="Content Max Width">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedMaxContentSize_width" editable="NO"/>
+        </sliver>
+        <sliver title="Max Height">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.dbgInspectedMaxContentSize_height" editable="NO"/>
+        </sliver>
+    </section>
+</slice>

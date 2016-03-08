@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+ DBGNSPopover.inspector
+ IDEDebuggerUI
+ 
+ Adapted for DebuggerUI by Troy Koelling on 12/16/2013
+ Created by Joey Hagedorn on 4/8/11.
+ Copyright 2011-2013 Apple Inc. All rights reserved.
+ -->
+<slice>
+    <section>
+        <sliver title="Behavior">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.behavior">
+                <option-group>
+                    <option value="0" title="Application Defined"/>
+                    <option value="1" title="Transient"/>
+                    <option value="2" title="Semi-Transient"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Appearance">
+            <property type="dbg-enumeration" placeholder="Loading…" keyPath="inspectedObjectsController.selection.object.appearance">
+                <option-group>
+                    <option value="0" title="Minimal"/>
+                    <option value="1" title="HUD"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver>
+            <property type="dbg-boolean" title="Animates" keyPath="inspectedObjectsController.selection.object.animates"/>
+        </sliver>
+    </section>
+</slice>

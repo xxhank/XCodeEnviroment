@@ -1,0 +1,6 @@
+framework module CrayonsiOSSupport {
+  umbrella header "CrayonsiOSSupport.h"
+
+  export *
+  module * { export * }
+}

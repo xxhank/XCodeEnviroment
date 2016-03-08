@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ DBGSCNView.plugindata
+ DebuggerUI
+ 
+ Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+ Copyright 2010-2013 Apple Inc. All rights reserved.
+ -->
+<slice>
+<!--  tkoelling: According to the SceneKit team, neither the URL nor the name are retained past load
+    <section>
+        <sliver title="Scene">
+            <property type="string" keyPath="inspectedObjectsController.selection.object.ibSceneName" editable="NO" />
+        </sliver>
+
+    </section>
+-->
+    <section>
+        <sliver title="Background">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.backgroundColor"/>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Behavior">
+            <property type="dbg-boolean" title="Allow camera control" keyPath="inspectedObjectsController.selection.object.allowsCameraControl"/>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Rendering">
+            <property type="dbg-boolean" title="Enable jittering" keyPath="inspectedObjectsController.selection.object.jitteringEnabled"/>
+        </sliver>
+<!-- tdkoelling: I can't figure out how this can be retrieved at runtime
+        <sliver>
+            <property type="dbg-boolean" title="Enable multisampling" keyPath="inspectedObjectsController.selection.object.multisampling"/>
+        </sliver>
+
+-->        <sliver>
+            <property type="dbg-boolean" title="Enable default lighting" keyPath="inspectedObjectsController.selection.object.autoenablesDefaultLighting"/>
+        </sliver>
+    </section>
+    <section>
+        <sliver title="Animations">
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.playing">
+                <option-group>
+                    <option title="Playing" value="1"/>
+                    <option title="Paused" value="0"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver>
+            <property type="dbg-boolean" title="Loop" keyPath="inspectedObjectsController.selection.object.loops"/>
+        </sliver>
+        <sliver title="Current Time">
+            <property type="string" title="Current Time" keyPath="inspectedObjectsController.selection.object.currentTime" editable="NO" />
+        </sliver>
+    </section>
+</slice>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    DBGQuartzComposer.plugindata
+    DebuggerUI
+
+    Adapted for DebuggerUI by Troy Koelling on 12/19/2013
+    Created by Rob Marini on 2010/07/22
+    Copyright 2010-2013 Apple Inc. All rights reserved.
+-->
+
+<slice>
+    <section>
+        <sliver>
+            <property type="dbg-enumeration" keyPath="inspectedObjectsController.selection.object.isPausedRendering">
+                <option-group>
+                    <option value="1" title="Paused"/>
+                    <option value="0" title="Playing"/>
+                </option-group>
+            </property>
+        </sliver>
+        <sliver title="Max Allowed FPS">
+            <property type="string" title="Frames Per Second" formatStyle="decimal" keyPath="inspectedObjectsController.selection.object.maxRenderingFrameRate" editable="NO"/>
+        </sliver>
+        <sliver>
+            <property type="dbg-boolean" title="Forwards All Events" keyPath="inspectedObjectsController.selection.object.eventForwarding"/>
+        </sliver>
+        <sliver>
+            <property type="dbg-boolean" title="Start Playing Automatically" keyPath="inspectedObjectsController.selection.object.autostartsRendering"/>
+        </sliver>
+        <sliver title="Erase Color">
+            <property type="dbg-color" keyPath="inspectedObjectsController.selection.object.eraseColor"/>
+        </sliver>
+    </section>
+</slice>
