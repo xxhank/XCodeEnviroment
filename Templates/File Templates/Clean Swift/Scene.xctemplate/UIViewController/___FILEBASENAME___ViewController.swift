@@ -14,7 +14,7 @@ import PKHUD
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerInput: class
 {
-    func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel)
+    func displaySomething(viewModel: ViewModel<___FILEBASENAMEASIDENTIFIER___ViewModel>)
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput
@@ -24,33 +24,43 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInput
 {
+    // MARK: Clean Swift
     var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput!
     var router: ___FILEBASENAMEASIDENTIFIER___Router!
-    
-    // MARK: - Object lifecycle
+
+    // MARK: <#Feature#>
+}
+
+// MARK: - View Controller
+extension ___FILEBASENAMEASIDENTIFIER___ViewController{
+    // MARK: Object lifecycle
     override func awakeFromNib()
     {
         super.awakeFromNib()
         ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(self)
     }
     
-    // MARK: - View lifecycle
+    // MARK: View lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         doSomethingOnLoad()
     }
-    
-    // MARK: - Event handling
+}
+
+// MARK: - <#Feature#>
+extension ___FILEBASENAMEASIDENTIFIER___ViewController{
+    // MARK: Setup
+
+    // MARK: Load
     func doSomethingOnLoad()
     {
         // NOTE: Ask the Interactor to do some work
-        
         let request = ___FILEBASENAMEASIDENTIFIER___Request()
         output.doSomething(request)
     }
     
-    // MARK: - Display logic
+    // MARK: Display
     func displaySomething(viewModel: ViewModel<___FILEBASENAMEASIDENTIFIER___ViewModel>)
     {
         switch viewModel {
