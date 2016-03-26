@@ -20,7 +20,7 @@
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
-				<string>^~2</string>
+				<string>~0</string>
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
@@ -42,7 +42,7 @@
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
-				<string>^~@2</string>
+				<string>~@0</string>
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
