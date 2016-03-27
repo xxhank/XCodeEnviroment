@@ -3,20 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cmark2</string>
+	<string>dispatch_once_swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: &lt;#content#&gt;</string>
+	<string>struct Static {
+            static var predicate: dispatch_once_t = 0
+            static var instance: &lt;#Class#&gt;? = nil
+        }
+        dispatch_once(&amp;Static.onceToken) {
+            &lt;#init#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5EABAD51-3983-43EE-9801-37C85519EC1C</string>
+	<string>41676293-0CA5-475A-B8CD-4D88F606EDAC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Comment Mark Level 2</string>
+	<string>Swift Dispatch Once</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
