@@ -1,2 +1,4 @@
 Plug-ins.ignore
 UserData/IB Support/Simulator Devices
+UserData/SearchScopes.xcsclist
+*.xcuserstate
