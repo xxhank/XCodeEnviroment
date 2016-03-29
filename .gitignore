@@ -1,2 +1,4 @@
+Plug-ins/*
 Plug-ins.ignore
-UserData/IB Support/Simulator Devices
+UserData/IB Support/* 
+UserData/*.xcuserstate
