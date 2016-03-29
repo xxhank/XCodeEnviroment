@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "http://EXAMPLE/___FILEBASENAME___"
   spec.license      = "MIT (example)"
   spec.author             = { "wangchao" => "xxhank.boy@gmail.com" }
- 
+
   spec.platform     = :ios, "8.0"
 
   spec.subspec 'Interface' do |sp|
@@ -32,18 +32,18 @@ Pod::Spec.new do |spec|
     sp.requires_arc = false
     sp.source_files = non_arc_files
   end
-  
+
   spec.header_mappings_dir = '.'
   # spec.preserve_paths = 'Frameworks/*.framework'
   # spec.module_map = 'source/module.modulemap'
-  
+
   # spec.public_header_files = "Classes/**/*.h"
   # spec.header_dir = 'Three20Core'
-  
+
   # Resources
   # spec.resources = ['Images/*.png', 'Sounds/*']
   spec.resource_bundles = {
-    '___FILEBASENAME___' => ['**/UI/*.xcassets', '**/*.xib', '**/*.storyboard'],
+    '___FILEBASENAME___' => ['Resource/**/*.json','**/UI/*.xcassets', '**/*.xib', '**/*.storyboard'],
   }
 
   # Build settings
@@ -52,12 +52,19 @@ Pod::Spec.new do |spec|
   # spec.vendored_frameworks = 'MyFramework.framework', 'TheirFramework.framework'
   # spec.vendored_libraries = 'libProj4.a', 'libJavaScriptCore.a'
 
-  # spec.compiler_flags = 
+  # spec.compiler_flags =
   # spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
 
   # Dependency
-  # spec.dependency "JSONKit", "~> 1.4"
-  # spec.dependency "OtherModule/Interface", "~> 1.4"
+  # spec.dependency "JSONKit"#, "~> 1.4"
+  # spec.dependency "OtherModule/Interface"#, "~> 1.4"
+  # spec.dependency ""
+  # spec.dependency ""
+  # spec.dependency ""
+  # spec.dependency ""
+  # spec.dependency ""
+  # spec.dependency ""
+  # spec.dependency ""
 end
