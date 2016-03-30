@@ -1,4 +1,6 @@
+Plug-ins/*
 Plug-ins.ignore
-UserData/IB Support/Simulator Devices
-UserData/SearchScopes.xcsclist
-*.xcuserstate
+UserData/IB Support/* 
+UserData/*.xcuserstate
+Plug-ins/Alcatraz.xcplugin/Contents/Info.plist
+Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz
