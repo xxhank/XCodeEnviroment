@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "http://EXAMPLE/___FILEBASENAME___"
   spec.license      = "MIT (example)"
-  spec.author             = { "wangchao" => "xxhank.boy@gmail.com" }
+  spec.author       = { "wangchao" => "xxhank.boy@gmail.com" }
 
   spec.platform     = :ios, "8.0"
 
