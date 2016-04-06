@@ -19,19 +19,19 @@ Pod::Spec.new do |spec|
 
   spec.platform     = :ios, "8.0"
 
-  spec.subspec 'Interface' do |sp|
-    sp.source_files = 'Interface/**/*.{swift,h}'
-  end
+  # spec.subspec 'Interface' do |sp|
+  #  sp.source_files = 'Interface/**/*.{swift,h}'
+  # end
 
   spec.requires_arc  = true
   spec.source_files  = "**/*.{h,m,mm,swift}"
-  non_arc_files   =  ""
-  spec.exclude_files = "Classes/Exclude",non_arc_files
+  # non_arc_files      =  ""
+  # spec.exclude_files = "Classes/Exclude",non_arc_files
 
-  spec.subspec 'no-arc' do |sp|
-    sp.requires_arc = false
-    sp.source_files = non_arc_files
-  end
+  # spec.subspec 'no-arc' do |sp|
+  #   sp.requires_arc = false
+  #   sp.source_files = non_arc_files
+  # end
 
   spec.header_mappings_dir = '.'
   # spec.preserve_paths = 'Frameworks/*.framework'
@@ -41,10 +41,11 @@ Pod::Spec.new do |spec|
   # spec.header_dir = 'Three20Core'
 
   # Resources
+  # spec.resource = 'Resources/HockeySDK.bundle'
   # spec.resources = ['Images/*.png', 'Sounds/*']
-  spec.resource_bundles = {
-    '___FILEBASENAME___' => ['Resource/**/*.json','**/UI/*.xcassets', '**/*.xib', '**/*.storyboard'],
-  }
+  # spec.resource_bundles = {
+  #  '___FILEBASENAME___' => ['**/Resource/**/*','**/UI/*.xcassets', '**/*.xib', '**/*.storyboard'],
+  # }
 
   # Build settings
   # spec.frameworks = "SomeFramework", "AnotherFramework"
@@ -58,8 +59,6 @@ Pod::Spec.new do |spec|
 
 
   # Dependency
-  # spec.dependency "JSONKit"#, "~> 1.4"
-  # spec.dependency "OtherModule/Interface"#, "~> 1.4"
   # spec.dependency ""
   # spec.dependency ""
   # spec.dependency ""
