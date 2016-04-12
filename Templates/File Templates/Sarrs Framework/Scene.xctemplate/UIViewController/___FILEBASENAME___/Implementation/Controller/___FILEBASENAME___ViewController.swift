@@ -26,6 +26,13 @@ public class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___
     }
 }
 
+// MARK: - SupportBusiness
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: SupportBusiness {
+    public func setBusiness(business: Business?) {
+        self.business = business as? ___FILEBASENAMEASIDENTIFIER___Business
+    }
+}
+
 // MARK: - Controller Cycle
 extension ___FILEBASENAMEASIDENTIFIER___ViewController {
     public override func viewDidLoad() {
@@ -49,4 +56,4 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController{
     {
         // business.doSomething()
     }
-} 
+}

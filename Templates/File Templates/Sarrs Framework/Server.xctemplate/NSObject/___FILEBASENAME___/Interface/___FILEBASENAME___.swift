@@ -7,12 +7,17 @@
 //
 
 // define input, output and feature of your module
-// MARK: - Input
+// MARK: - Parameters
+struct ___FILEBASENAMEASIDENTIFIER___Parameters{
+
+}
+
+// MARK: - Support Action
 protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
-    
+
 }
 
 // MARK: - Output
 enum ___FILEBASENAMEASIDENTIFIER___Notifications:String{
-    case ___FILEBASENAMEASIDENTIFIER___Demo = "Just Demo" 
-} 
+    case ___FILEBASENAMEASIDENTIFIER___Demo = "Just Demo"
+}

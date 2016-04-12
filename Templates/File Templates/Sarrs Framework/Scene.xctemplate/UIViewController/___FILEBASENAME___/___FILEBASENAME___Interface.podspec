@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"
 
   spec.requires_arc  = true
-  spec.source_files  = "Implementation/**/*.{h,m,mm,swift}"
+  spec.source_files  = "Interface/**/*.{h,m,mm,swift}"
   # non_arc_files      =  ""
   # spec.exclude_files = "Classes/Exclude",non_arc_files
 
@@ -40,10 +40,10 @@ Pod::Spec.new do |spec|
   # spec.resource  = 'Resources/HockeySDK.bundle'
   # spec.resources = ['Images/*.png', 'Sounds/*']
   # spec.resource_bundles = {
-  #  '___FILEBASENAME___' => ['Implementation/**/Resource/**/*.json',\
-  #                            'Implementation/**/UI/*.xcassets',\
-  #                            'Implementation/**/*.xib',\
-  #                            'Implementation/**/*.storyboard'],
+  #  '___FILEBASENAME___' => ['Interface/**/Resource/**/*.json',\
+  #                            'Interface/**/UI/*.xcassets', \
+  #                            'Interface/**/*.xib', \
+  #                            'Interface/**/*.storyboard'],
   # }
 
   # Build settings
@@ -58,7 +58,7 @@ Pod::Spec.new do |spec|
 
 
   # Dependency
-  spec.dependency "___FILEBASENAME___Interface"
+  # spec.dependency ""
   # spec.dependency ""
   # spec.dependency ""
   # spec.dependency ""

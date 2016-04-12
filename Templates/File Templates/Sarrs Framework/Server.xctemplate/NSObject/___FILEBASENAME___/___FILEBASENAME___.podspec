@@ -59,7 +59,7 @@ Pod::Spec.new do |spec|
 
 
   # Dependency
-  # spec.dependency ""
+  spec.dependency "___FILEBASENAME___Interface"
   # spec.dependency ""
   # spec.dependency ""
   # spec.dependency ""
