@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>associate_property_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private struct AssociatedKeys {
+        static var &lt;#KeyName#&gt;Key = "&lt;#KeyName#&gt;"
+    }
+    var &lt;#Property#&gt;: &lt;#PropertyType#&gt;? {
+        get {
+            return objc_getAssociatedObject(self, &amp;AssociatedKeys.&lt;#Property#&gt;Key) as? &lt;#PropertyType#&gt;
+        }
+
+        set {
+            if let newValue = newValue as? &lt;#PropertyType#&gt; {
+                objc_setAssociatedObject(self,
+                    &amp;AssociatedKeys.&lt;#Property#&gt;Key,
+                    newValue,
+                    .OBJC_ASSOCIATION_RETAIN_NONATOMIC
+                )
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>32CB416E-03AD-47A1-856A-4B1FB24FCA51</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Associate Property</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>org_view</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Main
+class &lt;#XXXView#&gt;: UIView {
+    // MARK: Object Cycle
+
+    // override init(frame: CGRect) {
+    // super.init(frame: frame)
+    // }
+
+    // required init?(coder aDecoder: NSCoder) {
+    // super.init(coder: aDecoder)
+    // }
+}
+
+// MARK: - Override
+extension &lt;#XXXView#&gt; {
+    // MARK: View Cycle
+    override func awakeFromNib() {
+    }
+
+    override func updateConstraints() {
+        &lt;#add your code here#&gt;
+        super.updateConstraints()
+    }
+
+    override func layoutSubviews() {
+    }
+}
+
+// MARK: -
+extension &lt;#XXXView#&gt; {
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>561466BD-6C24-417B-AF0C-48D466FBAB69</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Organization View</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
