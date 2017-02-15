@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__log_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct XCODE_COLORS {
+    static let head = "\u{001b}["
+    static let tail = "\(head);"
+
+    static let info = "fg127,127,127;"
+    static let warning = "fg255,255,0;"
+    static let error = "fg255,0,0;"
+}
+
+func SSLog(prefix: String, message: @autoclosure @escaping () -&gt; Any?, file: StaticString = #file, line: Int = #line, function: StaticString = #function) {
+    if let message = message() {
+        let fileName = ("\(file)" as NSString).lastPathComponent
+        print("\(XCODE_COLORS.head)\(prefix)[\(fileName):\(line)] \(function)&gt; \(message)\(XCODE_COLORS.tail)")
+    }
+}
+
+public func SSLogInfo(_ closure: @autoclosure @escaping () -&gt; Any?, file: StaticString = #file, line: Int = #line, function: StaticString = #function) {
+    SSLog(prefix: XCODE_COLORS.info, message: closure, file: file, line: line, function: function)
+}
+
+public func SSLogWarning(_ closure: @autoclosure @escaping () -&gt; Any?, file: StaticString = #file, line: Int = #line, function: StaticString = #function) {
+    SSLog(prefix: XCODE_COLORS.warning, message: closure, file: file, line: line, function: function)
+}
+
+public func SSLogError(_ closure: @autoclosure @escaping () -&gt; Any?, file: StaticString = #file, line: Int = #line, function: StaticString = #function) {
+    SSLog(prefix: XCODE_COLORS.error, message: closure, file: file, line: line, function: function)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9B13B238-0AA3-405D-BFDB-B87F4536AA86</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Color&amp; Level Log</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

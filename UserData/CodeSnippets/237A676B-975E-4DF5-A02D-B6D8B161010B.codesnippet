@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__SupportDatabasePersistent</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension &lt;#ClassOrStruct#&gt;: SupportDatabasePersistent {
+
+    public static func tableName() -&gt; String {
+        return "\(self)"
+    }
+    public static func databaseName() -&gt; String {
+        return "\(self).db"
+    }
+
+    public init?(with dict: ColumnValues) {
+
+    }
+    public static func columns() -&gt; [(String, SQLiteDataType, SQLiteCapacity, [SQLiteConstraint])] {
+        return []
+    }
+    public func valueForColumn(_ column: String) -&gt; ColumnValue? {
+        switch column {
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>237A676B-975E-4DF5-A02D-B6D8B161010B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SupportDatabasePersistent</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

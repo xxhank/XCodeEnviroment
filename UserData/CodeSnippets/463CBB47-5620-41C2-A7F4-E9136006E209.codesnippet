@@ -3,24 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>test</string>
+	<string>__style_</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)test&lt;#Foo_ShouldBar#&gt;
-{
-    &lt;#given - when - then#&gt;
-}</string>
+	<string>static func &lt;#style#&gt;(view: UIView) {
+        guard let view = view as? &lt;#Class#&gt; else { return }
+        &lt;#style code#&gt;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>96593CA0-9F64-4AAC-BAD0-1E77F6120775</string>
+	<string>463CBB47-5620-41C2-A7F4-E9136006E209</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Define test case, with hints for naming and structure.</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Test Case (qualitycoding.org)</string>
+	<string>Swift Style</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

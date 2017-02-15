@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ctodo</string>
+	<string>enum_with_transform</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -12,13 +12,25 @@
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> // TODO:: &lt;#content#&gt;</string>
+	<string>enum &lt;#EnumName#&gt;: &lt;#EnumType#&gt; {
+    &lt;#cases#&gt;
+
+    typealias JSONType = &lt;#EnumName#&gt;
+    typealias ObjectType = &lt;#EnumType#&gt;
+    static let transform = TransformOf(fromJSON: { (value: JSONType?) -&gt; ObjectType? in
+        guard let value = value else { return nil }
+        return ObjectType(rawValue: value)
+    }) { (value: ObjectType?) -&gt; JSONType? in
+        guard let value = value else { return nil }
+        return value.rawValue
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4B125AD3-8B36-4888-BCE8-AA195C980577</string>
+	<string>A973964C-C5EC-49A5-87EF-8DCF2B7BF7CA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Comment Todo</string>
+	<string>enum_with_transform</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

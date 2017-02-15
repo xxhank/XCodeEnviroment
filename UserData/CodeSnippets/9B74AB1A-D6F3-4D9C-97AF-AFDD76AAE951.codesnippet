@@ -9,17 +9,18 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class &lt;#name#&gt;Transform: TransformType {
-    typealias Object = &lt;#target#&gt;
-    typealias JSON = &lt;#json#&gt;
+	<string>public class &lt;#name#&gt;Transform: TransformType {
+    public typealias Object = &lt;#target#&gt;
+    public typealias JSON = &lt;#json#&gt;
 
-    init() { }
+   public  init() { }
 
-    func transformFromJSON(value: AnyObject?) -&gt; Object? {
+   public  func transformFromJSON(value: AnyObject?) -&gt; Object? {
+        &lt;#code#&gt;
     }
 
-    func transformToJSON(value: Object?) -&gt; JSON? {
-        return
+   public func transformToJSON(value: Object?) -&gt; JSON? {
+        &lt;#code#&gt;
     }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

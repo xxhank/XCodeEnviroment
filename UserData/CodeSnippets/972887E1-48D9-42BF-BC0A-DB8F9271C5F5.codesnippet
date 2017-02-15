@@ -21,7 +21,7 @@ self.&lt;#control#&gt;.rac_command = [[RACCommand alloc] initWithSignalBlock: ^R
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>rac_command</string>
+	<string>OC rac_command</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__nsasert-class</string>
+	<string>_tail_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSAssert( [&lt;#object#&gt; isKindOfClass:[&lt;#Class#&gt; class]], @"%@ is not a instance of class : %@", &lt;#object#&gt;, NSStringFromClass([&lt;#Class#&gt; class]) );</string>
+	<string>{ [weak self] in
+    guard let wself = self else { return }
+    &lt;#code#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9D51A5AF-B721-452F-828B-744F0A1E741C</string>
+	<string>58944798-05F0-4AA5-AAF7-947099A648CA</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC nsasert-class</string>
+	<string>Swift Tail Block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

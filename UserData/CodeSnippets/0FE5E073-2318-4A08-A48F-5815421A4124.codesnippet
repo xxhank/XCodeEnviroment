@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__nsasert-class</string>
+	<string>SSLogConvertFailed</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSAssert( [&lt;#object#&gt; isKindOfClass:[&lt;#Class#&gt; class]], @"%@ is not a instance of class : %@", &lt;#object#&gt;, NSStringFromClass([&lt;#Class#&gt; class]) );</string>
+	<string>SSLogWarning("can't convert \(&lt;#obj#&gt;.dynamicType) to &lt;#DestType#&gt;")</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9D51A5AF-B721-452F-828B-744F0A1E741C</string>
+	<string>0FE5E073-2318-4A08-A48F-5815421A4124</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC nsasert-class</string>
+	<string>SSLogWarning Convert Failed</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

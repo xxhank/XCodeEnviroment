@@ -3,28 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>switch_viewmodel</string>
+	<string>__aspect</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>switch &lt;#response#&gt; {
-        case .Error(let error):
-            PKHUD.sharedHUD.contentView = PKHUDTextView(text: error.localizedDescription)
-            PKHUD.sharedHUD.show()
-            PKHUD.sharedHUD.hide(afterDelay: 2.0)
-            break
-
-        case .Result(let result):
-            break
-        }</string>
+	<string>let block: @convention(block)(AspectInfo, animated: Bool) -&gt; Void = { info, _ in
+               &lt;#code#&gt;
+            }
+            do {
+                try &lt;#object#&gt;.aspect_hookSelector(&lt;#select#&gt;, withOptions: &lt;#position#&gt;, usingBlock: unsafeBitCast(block, AnyObject.self))
+            } catch let aspectError {
+                SSLogError("\(aspectError)")
+            }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FD138220-B8E9-40E1-9A14-D98404F47219</string>
+	<string>59E4AE14-EA96-48AE-8EDC-959521C4593E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Switch ViewModel</string>
+	<string>Aspect Use</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

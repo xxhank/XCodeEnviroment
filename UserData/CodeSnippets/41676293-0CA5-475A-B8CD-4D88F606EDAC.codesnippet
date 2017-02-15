@@ -11,14 +11,16 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>struct Static {
-            static var predicate: dispatch_once_t = 0
-            static var instance: &lt;#type#&gt;? = nil
-        }
-        dispatch_once(&amp;Static.predicate) {
-             
-            Static.instance = &lt;#Type#&gt;
-        }
-        return Static.instance!</string>
+    static var predicate: dispatch_once_t = 0
+    static var instance: &lt;#type#&gt;? = nil
+}
+
+func &lt;#name#&gt;(&lt;#parameters#&gt;) -&gt; &lt;#return type#&gt; {
+    dispatch_once(&amp;Static.predicate) {
+        Static.instance = &lt;#Type#&gt;
+    }
+    return Static.instance!
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>41676293-0CA5-475A-B8CD-4D88F606EDAC</string>
 	<key>IDECodeSnippetLanguage</key>

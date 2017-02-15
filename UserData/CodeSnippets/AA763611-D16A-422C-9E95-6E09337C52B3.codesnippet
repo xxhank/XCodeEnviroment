@@ -2,20 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__style_button</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(&lt;#delayInSeconds#&gt; * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-    &lt;#code to be executed after a specified delay#&gt;
-});</string>
+	<string>static func &lt;#style#&gt;Button(view: UIView) {
+        guard let button = view as? UIButton else { return }
+        &lt;#style code#&gt;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5A0E268-E3CF-4AA5-A13C-3669226B83DD</string>
+	<string>AA763611-D16A-422C-9E95-6E09337C52B3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>Swift Style Button</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

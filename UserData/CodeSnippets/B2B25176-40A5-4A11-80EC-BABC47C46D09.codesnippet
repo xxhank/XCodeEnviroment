@@ -63,7 +63,7 @@ setenv("XcodeColors", "YES", 0); \
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LEVEL log</string>
+	<string>OC LEVEL log</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

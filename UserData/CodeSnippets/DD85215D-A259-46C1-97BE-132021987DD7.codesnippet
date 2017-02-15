@@ -2,23 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__style_label</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)placeholder
-{
-    UIBPlaceHolder *newObject = [[self class] new];
-
-    return newObject;
+	<string> static func &lt;#style#&gt;Label(view: UIView) {
+        guard let label = view as? UILabel else { return }
+        &lt;#style code#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B49BE2EA-9C14-4FD5-A23E-F44F5E451360</string>
+	<string>DD85215D-A259-46C1-97BE-132021987DD7</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>Swift Style Label</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

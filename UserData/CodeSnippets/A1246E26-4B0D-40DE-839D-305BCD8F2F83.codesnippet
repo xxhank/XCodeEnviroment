@@ -3,19 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__nsasert-class</string>
+	<string>enum_custom</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSAssert( [&lt;#object#&gt; isKindOfClass:[&lt;#Class#&gt; class]], @"%@ is not a instance of class : %@", &lt;#object#&gt;, NSStringFromClass([&lt;#Class#&gt; class]) );</string>
+	<string>enum &lt;#name#&gt; {
+    case &lt;#case#&gt;
+}
+public func == (lhs: &lt;#name#&gt;, rhs: &lt;#name#&gt;) -&gt; Bool {
+    return &lt;#compare#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9D51A5AF-B721-452F-828B-744F0A1E741C</string>
+	<string>A1246E26-4B0D-40DE-839D-305BCD8F2F83</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC nsasert-class</string>
+	<string>swift enum custom</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

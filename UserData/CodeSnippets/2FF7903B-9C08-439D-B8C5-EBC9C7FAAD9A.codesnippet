@@ -3,30 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>testbutton</string>
+	<string>cfun</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>TopLevel</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)test&lt;#NameOfButton#&gt;ButtonAction
-{
-    [sut view];
-    
-    assertThat([sut.&lt;#button outlet#&gt; actionsForTarget:sut forControlEvent:UIControlEventTouchUpInside],
-               contains(@"&lt;#selector name#&gt;", nil));
-}
+	<string>/**
+ *  &lt;#brief#&gt;
+ *
+ *  @param &lt;#param#&gt; &lt;#parm description#&gt;
+ *  @param &lt;#param#&gt; &lt;#parm description#&gt;
+ *  @param &lt;#param#&gt; &lt;#parm description#&gt;
+ *
+ *  @return &lt;#return#&gt;
+ *
+ *  @code
+ *  &lt;#code#&gt;
+ *  @endcode
+ */
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>17D94DE5-BC5B-49F6-9697-E1D2FE4A354B</string>
+	<string>2FF7903B-9C08-439D-B8C5-EBC9C7FAAD9A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Define test ensuring that button has expected action. "sut" is system under test. Uses OCHamcrest.</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Test UIButton Action (qualitycoding.org)</string>
+	<string>Commnet Function OC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

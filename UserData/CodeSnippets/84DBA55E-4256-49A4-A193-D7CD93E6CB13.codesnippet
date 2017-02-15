@@ -3,25 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>teardown</string>
+	<string>__is_device</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
+		<string>TopLevel</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)tearDown
-{
-    &lt;#tear down#&gt;
-    [super tearDown];
-}</string>
+	<string>#if !((arch(i386) || arch(x86_64)) &amp;&amp; os(iOS))
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9C175617-CE05-4BCA-848D-C4E4DAC19851</string>
+	<string>84DBA55E-4256-49A4-A193-D7CD93E6CB13</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Define test fixture tearDown method.</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Test Fixture Tear-Down (qualitycoding.org)</string>
+	<string>check_is_device</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
