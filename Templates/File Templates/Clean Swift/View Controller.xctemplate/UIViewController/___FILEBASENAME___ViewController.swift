@@ -1,1 +1,0 @@
-/Users/wangchaojs02/workspace/XCodeEnviroment/Templates/File Templates/Clean Swift/Scene.xctemplate/UIViewController/___FILEBASENAME___ViewController.swift

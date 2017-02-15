@@ -1,1 +1,0 @@
-Put you view models in this folder
