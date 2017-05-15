@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>_transform_extension</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import ObjectMapper
+extension &lt;#Type#&gt; {
+    static let transform = TransformOf&lt;&lt;#OBJECT#&gt;, &lt;#JSONType#&gt;&gt;(
+        fromJSON: { value in
+            return &lt;#Code#&gt;
+        }, toJSON: { value in
+            return &lt;#code#&gt;
+        }
+    )
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>58356FED-8440-4523-9741-6F2A4DDAFC34</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Add Transform Extension</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

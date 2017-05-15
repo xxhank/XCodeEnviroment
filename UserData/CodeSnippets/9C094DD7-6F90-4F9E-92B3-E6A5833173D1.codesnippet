@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>image_test_module</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@testable import </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9C094DD7-6F90-4F9E-92B3-E6A5833173D1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Import Test Module</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
