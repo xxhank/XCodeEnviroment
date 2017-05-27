@@ -6,7 +6,7 @@
 	<string>__extern_decl__</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>extern NSString*const &lt;#name#&gt;Notification;</string>
