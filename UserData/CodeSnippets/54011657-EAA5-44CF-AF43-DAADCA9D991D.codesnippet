@@ -40,7 +40,7 @@ extension &lt;#XXXViewController#&gt; {
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Organization - Controller</string>
+	<string>SWIFT Organization - Controller</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
