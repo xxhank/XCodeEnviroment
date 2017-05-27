@@ -24,7 +24,7 @@ SMART_CONTROL_IMPL(&lt;#class#&gt;)
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Smart Control</string>
+	<string>OC: Smart Control</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

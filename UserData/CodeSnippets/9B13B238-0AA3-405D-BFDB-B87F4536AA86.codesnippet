@@ -41,7 +41,7 @@ public func SSLogError(_ closure: @autoclosure @escaping () -&gt; Any?, file: St
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Color&amp; Level Log</string>
+	<string>SWIFT:Swift Color&amp; Level Log</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

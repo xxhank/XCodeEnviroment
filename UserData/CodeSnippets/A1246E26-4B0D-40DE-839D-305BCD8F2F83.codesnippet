@@ -20,7 +20,7 @@ public func == (lhs: &lt;#name#&gt;, rhs: &lt;#name#&gt;) -&gt; Bool {
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>swift enum custom</string>
+	<string>SWIFT: enum custom</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
