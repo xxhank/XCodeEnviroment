@@ -3,19 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__extern_decl__</string>
+	<string>__nserror</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extern NSString*const &lt;#name#&gt;;</string>
+	<string>NSDictionary *userInfo = @{NSLocalizedDescriptionKey:@""};
+NSError      *error    = [NSError errorWithDomain:@"&lt;#domain#&gt;"
+                                             code:&lt;#code#&gt;
+                                         userInfo:userInfo];
+NSLogError(@"%@",error);
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FEC51E79-C45C-49E0-9773-0EF4D01CB33D</string>
+	<string>E84E2D77-1D63-4B06-B918-FD47249A4EE9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Extern Declare</string>
+	<string>OC: NSError </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

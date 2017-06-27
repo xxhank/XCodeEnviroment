@@ -3,19 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__extern_decl__</string>
+	<string>__nonnull_batch</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extern NSString*const &lt;#name#&gt;;</string>
+	<string>NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_END</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FEC51E79-C45C-49E0-9773-0EF4D01CB33D</string>
+	<string>4C94166D-7CD7-44BE-BBA7-0C27A24EC2F0</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Extern Declare</string>
+	<string>OC:NONNULL BLOCK</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
