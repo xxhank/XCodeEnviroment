@@ -6,10 +6,10 @@
 	<string>@property-weak</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, weak) &lt;#type#&gt; &lt;#name#&gt;;</string>
+	<string>@property (nonatomic, weak) &lt;#type#&gt; *&lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9D4FBCDC-82CB-4D71-8EDE-D2EA575E1629</string>
 	<key>IDECodeSnippetLanguage</key>

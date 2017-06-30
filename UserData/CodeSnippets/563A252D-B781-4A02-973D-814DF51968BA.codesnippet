@@ -6,15 +6,15 @@
 	<string>@property-readonly</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, readonly) &lt;#type#&gt;*&lt;#name#&gt;
+	<string>@property (nonatomic, readonly) &lt;#type#&gt; *&lt;#name#&gt;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>563A252D-B781-4A02-973D-814DF51968BA</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>@property-readonly</string>
 	<key>IDECodeSnippetUserSnippet</key>
