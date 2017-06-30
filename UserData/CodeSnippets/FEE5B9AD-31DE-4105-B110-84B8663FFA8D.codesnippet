@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSString*const &lt;#name#&gt;Notification           = @"&lt;#content#&gt;Notification";</string>
+	<string>NSString*const &lt;#name#&gt;           = @"&lt;#content#&gt;";</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FEE5B9AD-31DE-4105-B110-84B8663FFA8D</string>
 	<key>IDECodeSnippetLanguage</key>

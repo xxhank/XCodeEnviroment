@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__extern_decl__</string>
+	<string>__disable_assgin_enum_check</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extern NSString*const &lt;#name#&gt;;</string>
+	<string>#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wassign-enum"
+#pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FEC51E79-C45C-49E0-9773-0EF4D01CB33D</string>
+	<string>0767BEB1-4852-4037-8924-3A49039DB631</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Extern Declare</string>
+	<string>Disable Assgin Enum Check</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

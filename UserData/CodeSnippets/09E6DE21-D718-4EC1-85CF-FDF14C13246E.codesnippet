@@ -3,19 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__extern_decl__</string>
+	<string>__has_include</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extern NSString*const &lt;#name#&gt;;</string>
+	<string>// *INDENT-OFF*
+#if __has_include(&lt;&lt;#Module#&gt;&gt;)
+// *INDENT-ON*
+    #define &lt;#code#&gt;
+#else
+    #define &lt;#code#&gt;
+#endif
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FEC51E79-C45C-49E0-9773-0EF4D01CB33D</string>
+	<string>09E6DE21-D718-4EC1-85CF-FDF14C13246E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Extern Declare</string>
+	<string>Check Include</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
