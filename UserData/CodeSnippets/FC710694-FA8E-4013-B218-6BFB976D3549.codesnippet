@@ -6,7 +6,7 @@
 	<string>@property-weak-datasouce</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic, weak) id&lt;&lt;#Class#&gt;DataSource&gt; dataSource;

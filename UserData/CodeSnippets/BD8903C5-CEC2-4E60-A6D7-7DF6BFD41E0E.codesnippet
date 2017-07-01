@@ -6,7 +6,7 @@
 	<string>@property-block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic, copy) &lt;#returnType#&gt;(^&lt;#Name#&gt;)(&lt;#param#&gt;);</string>
