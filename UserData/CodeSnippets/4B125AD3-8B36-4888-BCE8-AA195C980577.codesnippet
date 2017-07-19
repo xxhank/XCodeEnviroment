@@ -12,13 +12,13 @@
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> // TODO:: &lt;#content#&gt;</string>
+	<string> /// TODO: &lt;#content#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4B125AD3-8B36-4888-BCE8-AA195C980577</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Comment Todo</string>
+	<string>SWIFT: Comment Todo</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
