@@ -3,23 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__hanle_error</string>
+	<string>__error_handle_ntyresult</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (!&lt;#result.value#&gt;) {
+	<string>if (!result.value) {
     NSError *error = result.error?:NTYError(0, @"unknown error");
     NSLogError(@"%@",error);
     return;
-}</string>
+}
+
+&lt;#ExtStreamResponse#&gt; *response = [&lt;#ExtStreamResponse#&gt; cast:result.value];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2A1A5D17-FE76-4469-90A6-D508B843FD56</string>
+	<string>51643239-A56C-44B4-9696-ED779CAD85BC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC: handle error</string>
+	<string>OC:Handle NTYResult</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
