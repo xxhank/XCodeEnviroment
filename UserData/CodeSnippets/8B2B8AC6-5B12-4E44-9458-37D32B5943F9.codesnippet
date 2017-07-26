@@ -3,23 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ctodo</string>
+	<string>#if_debug</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
-		<string>CodeBlock</string>
-		<string>TopLevel</string>
-		<string>ClassInterfaceMethods</string>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>///TODO: &lt;#message#&gt;</string>
+	<string>#ifdef DEBUG
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C13646F4-58A2-4E91-88C9-03EB4E6CCE41</string>
+	<string>8B2B8AC6-5B12-4E44-9458-37D32B5943F9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC: TODO</string>
+	<string>OC: DEBUG only</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

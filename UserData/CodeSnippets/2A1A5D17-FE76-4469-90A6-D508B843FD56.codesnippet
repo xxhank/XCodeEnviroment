@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ctodo</string>
+	<string>__hanle_error</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
 		<string>CodeBlock</string>
-		<string>TopLevel</string>
-		<string>ClassInterfaceMethods</string>
-		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>///TODO: &lt;#message#&gt;</string>
+	<string>if (!&lt;#result.value#&gt;) {
+    NSError *error = result.error?:NTYError(0, @"unknown error");
+    NSLogError(@"%@",error);
+    return;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C13646F4-58A2-4E91-88C9-03EB4E6CCE41</string>
+	<string>2A1A5D17-FE76-4469-90A6-D508B843FD56</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC: TODO</string>
+	<string>OC: handle error</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
