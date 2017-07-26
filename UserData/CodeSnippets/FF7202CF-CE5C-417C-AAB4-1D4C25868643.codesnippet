@@ -28,7 +28,7 @@ for(NSUInteger familyIndex = 0; familyIndex &lt; [familyNames count]; ++familyIn
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC List Device Fonts</string>
+	<string>OC: List Device Fonts</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

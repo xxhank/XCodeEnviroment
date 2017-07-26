@@ -3,20 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__nonnull_batch</string>
+	<string>@interface-viewmodel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NS_ASSUME_NONNULL_BEGIN
-NS_ASSUME_NONNULL_END</string>
+	<string>@interface &lt;#protocol#&gt;Impl : NSObject&lt;&lt;#protocol#&gt;&gt;
++ (instancetype)viewModel:(&lt;#ArgumentType#&gt;*)item;
+@end</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4C94166D-7CD7-44BE-BBA7-0C27A24EC2F0</string>
+	<string>332D8F74-BB3A-43BA-A5E7-BA965875F153</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC: NONNULL BLOCK</string>
+	<string>OC: Interface ViewModel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

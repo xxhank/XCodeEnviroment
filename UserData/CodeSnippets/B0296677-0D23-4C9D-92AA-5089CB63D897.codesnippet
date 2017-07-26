@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__log_support_level</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define __FILENAME__ (char*)(strrchr(__FILE__, '/') + 1)
+#define NSLogError(fmt,...) NSLog(@"\033[fg255,0,0;" @"Error: %s:%d %s&gt;" fmt  @"\033;", __FILENAME__, __LINE__, __FUNCTION__, ## __VA_ARGS__);
+#define NSLogWarngin(fmt,...) NSLog(@"\033[fg255,255,0;" @"Warngin: %s:%d %s&gt;"fmt @"\033;", __FILENAME__, __LINE__, __FUNCTION__, ## __VA_ARGS__);
+#define NSLogInfo(fmt,...) NSLog(@"\033[fg127,127,127;" @"Info: %s:%d %s&gt;" fmt @"\033;", __FILENAME__, __LINE__, __FUNCTION__, ## __VA_ARGS__);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B0296677-0D23-4C9D-92AA-5089CB63D897</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>OC: NSLogXXX</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
