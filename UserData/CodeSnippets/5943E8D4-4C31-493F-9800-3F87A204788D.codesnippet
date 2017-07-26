@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__nonnull_batch</string>
+	<string>@protocol-viewmodel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NS_ASSUME_NONNULL_BEGIN
-NS_ASSUME_NONNULL_END</string>
+	<string>@protocol &lt;#base#&gt;ViewModel &lt;&lt;#protocol#&gt;&gt;
+@end
+typedef id&lt;&lt;#base#&gt;ViewModel&gt;          &lt;#base#&gt;ViewModelType;
+typedef NSArray&lt;&lt;#base#&gt;ViewModelType&gt; &lt;#base#&gt;ViewModelArray;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4C94166D-7CD7-44BE-BBA7-0C27A24EC2F0</string>
+	<string>5943E8D4-4C31-493F-9800-3F87A204788D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC: NONNULL BLOCK</string>
+	<string>OC: Protocol ViewModel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

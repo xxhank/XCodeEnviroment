@@ -3,20 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__nonnull_batch</string>
+	<string>__shared</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NS_ASSUME_NONNULL_BEGIN
-NS_ASSUME_NONNULL_END</string>
+	<string>+ (instancetype)shared {
+    static dispatch_once_t onceToken;
+    static &lt;#Type#&gt;      *instance;
+    dispatch_once(&amp;onceToken, ^{
+        instance = [&lt;#Type#&gt; new];
+    });
+
+    return instance;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4C94166D-7CD7-44BE-BBA7-0C27A24EC2F0</string>
+	<string>8E35743F-55C8-4125-A390-4F6AB6E86A6F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC: NONNULL BLOCK</string>
+	<string>OC: Singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

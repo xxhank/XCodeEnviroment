@@ -3,20 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__nonnull_batch</string>
+	<string>__error_process</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NS_ASSUME_NONNULL_BEGIN
-NS_ASSUME_NONNULL_END</string>
+	<string>if (!result.value) {
+    NSError *error = result.error?:NTYError(0, @"unknown error");
+    NSLogErrorObject(error);
+    completion([NTYResult resultWithError:error]);
+    return;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4C94166D-7CD7-44BE-BBA7-0C27A24EC2F0</string>
+	<string>A1DBA534-FCBE-4619-BD9C-5107E8868E20</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC: NONNULL BLOCK</string>
+	<string>OC: handle error</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

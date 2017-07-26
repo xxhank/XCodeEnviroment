@@ -3,19 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__trace</string>
+	<string>@implementation-privte</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> NSLog( @"%@", NSStringFromSelector(_cmd) );</string>
+	<string>@interface &lt;#class#&gt; ()
+@end
+@implementation &lt;#class#&gt;
++ (instancetype)viewModel:(&lt;#type#&gt;*)item {
+    &lt;#class#&gt; *instance = [[self class] new];
+    return instance;
+}
+@end</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>613844BE-3FEB-429B-8588-6898B140C6CF</string>
+	<string>2DE310A8-D008-430A-B3EC-14D92CB08573</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>OC Trace fuction call</string>
+	<string>OC: Implementation With Private</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
