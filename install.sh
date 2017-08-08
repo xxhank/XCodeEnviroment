@@ -17,10 +17,11 @@ function safe_ln( ){
 
     ln -s "$RUN_DIR"/"$source" "${targetDir}"
 }
-
-safe_ln "Plug-ins"    "/Library/Application Support/Developer/Shared/Xcode"
-safe_ln "Templates"   "/Library/Developer/Xcode"
-safe_ln "UserData"    "/Library/Developer/Xcode"
+	
+# safe_ln "Plug-ins"  			  	"/Library/Application Support/Developer/Shared/Xcode"
+safe_ln "Templates"   				"/Library/Developer/Xcode"
+safe_ln "UserData"    				"/Library/Developer/Xcode"
+safe_ln "FontAndColorThemes"    	"/Library/Developer/Xcode"
 
 
 #IFS=o
