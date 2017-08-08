@@ -3,41 +3,88 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>org_controller</string>
+	<string>__org_controller</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Protocol
+	<string>#pragma mark - Memory Management
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
 
-#pragma mark - Constant
+- (instancetype)initWithNibName:(NSString*)nibNameOrNil bundle:(NSBundle*)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+    }
+    return self;
+}
 
-@interface ViewController ()
-@end
-
-@implementation ViewController
-
-#pragma mark - Object Cycle
-
-#pragma mark - Override
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (instancetype)initWithCoder:(NSCoder*)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+    }
+    return self;
 }
 
 - (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
 }
 
-#pragma mark - 功能1
+- (void)dealloc {
+}
 
-#pragma mark - 功能2
+#pragma mark - Life Cycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
 
-#pragma mark - Delegate &amp; DataSource
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
 
-#pragma mark - Helper</string>
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+}
+
+- (void)viewWillLayoutSubviews {
+}
+
+- (void)viewDidLayoutSubviews {
+}
+
+#pragma mark - Build
+- (void)buildUI {
+}
+
+- (void)loadNewData {
+    [super loadNewData];
+}
+
+- (void)loadMoreData:(BOOL)prefetch {
+    [super loadMoreData:prefetch];
+}
+
+#pragma mark - Override
+
+#pragma mark - Feature 1
+
+#pragma mark - Override
+#pragma mark - Action
+#pragma mark -
+#pragma mark -
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3E8BE803-4DEA-4B61-B6A0-D96A0C08BBDB</string>
 	<key>IDECodeSnippetLanguage</key>
