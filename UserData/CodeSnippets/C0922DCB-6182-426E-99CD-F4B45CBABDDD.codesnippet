@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__add_to_container</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+[self addChildViewController:&lt;#ChileController#&gt;];
+// &lt;#ChileController#&gt;.view.frame = &lt;#frame#&gt;;
+[self.view addSubview:&lt;#ChileController#&gt;.view];
+[&lt;#ChileController#&gt; didMoveToParentViewController:self];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C0922DCB-6182-426E-99CD-F4B45CBABDDD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>OC: Container Add Controller </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

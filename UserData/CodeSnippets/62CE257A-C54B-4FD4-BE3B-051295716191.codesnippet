@@ -2,25 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>__unsupport_</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (!result.value) {
-            NSError *error = result.error?:NTYError(0, @"unknown error");
-            NSLogError(@"%@",error);
-            return;
-        }</string>
+	<string>NSLogWarn(@"unsupport &lt;#code#&gt; %@", @(&lt;#x#&gt;));</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8679C742-715C-4B24-B16B-D69DCA577983</string>
+	<string>62CE257A-C54B-4FD4-BE3B-051295716191</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>OC: Notice Unsupport</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
