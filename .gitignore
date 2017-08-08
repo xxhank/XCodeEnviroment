@@ -4,3 +4,5 @@ UserData/IB Support/*
 UserData/*.xcuserstate
 Plug-ins/*
 UserData/SearchScopes.xcsclist
+/.DS_Store
+.DS_Store
