@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLogWarn(@"unsupport &lt;#code#&gt; %@", @(&lt;#x#&gt;));</string>
+	<string>NSLogWarn(@"unsupport &lt;#code#&gt;. %@", &lt;#x#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>62CE257A-C54B-4FD4-BE3B-051295716191</string>
 	<key>IDECodeSnippetLanguage</key>
