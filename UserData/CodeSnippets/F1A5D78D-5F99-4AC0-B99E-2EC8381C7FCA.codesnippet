@@ -9,10 +9,11 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// *INDENT-OFF*
-#if __has_include(&lt;&lt;#include#&gt;&gt;)
-#import &lt;&lt;#include#&gt;&gt;
-// *INDENT-ON*
+	<string>#undef INCLUDE_HEADER
+#define INCLUDE_HEADER &lt;&lt;#xx#&gt;&gt;
+#if __has_include(INCLUDE_HEADER)
+#import INCLUDE_HEADER
+#undef INCLUDE_HEADER
 #endif</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F1A5D78D-5F99-4AC0-B99E-2EC8381C7FCA</string>
