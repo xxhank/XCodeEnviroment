@@ -6,10 +6,10 @@
 	<string>@property-weak-delegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, weak) id&lt;&lt;#Class#&gt;Delegate&gt;   delegate;
+	<string>property (nonatomic, weak) id&lt;&lt;#Class#&gt;Delegate&gt;   delegate;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>72C2CEB9-3339-41E6-83CA-02E79EA35E51</string>

@@ -6,10 +6,10 @@
 	<string>@property-iboutlet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, weak) IBOutlet &lt;#type#&gt; *&lt;#name#&gt;;</string>
+	<string>property (nonatomic, weak) IBOutlet &lt;#type#&gt; *&lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6056AC69-A5D4-453C-AE30-BA8340B132CB</string>
 	<key>IDECodeSnippetLanguage</key>

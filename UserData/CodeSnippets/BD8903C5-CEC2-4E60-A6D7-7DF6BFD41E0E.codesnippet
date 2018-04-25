@@ -6,10 +6,10 @@
 	<string>@property-block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#returnType#&gt;(^&lt;#Name#&gt;)(&lt;#param#&gt;);</string>
+	<string>property (nonatomic, copy) &lt;#returnType#&gt;(^&lt;#Name#&gt;)(&lt;#param#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BD8903C5-CEC2-4E60-A6D7-7DF6BFD41E0E</string>
 	<key>IDECodeSnippetLanguage</key>

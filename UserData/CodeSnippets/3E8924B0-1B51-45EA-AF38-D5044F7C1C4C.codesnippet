@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@property-strong</string>
+	<string>@available</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>property (nonatomic, strong) &lt;#Type#&gt; *&lt;#name#&gt;;</string>
+	<string> #if __IPHONE_OS_VERSION_MAX_ALLOWED &gt;= __IPHONE_11_0
+            if (@available(iOS 11.0, *)) {
+            }
+   #endif /* if __IPHONE_OS_VERSION_MAX_ALLOWED &gt;= __IPHONE_11_0 */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>76C21342-EFB9-4720-BAC4-1E12C4B2385A</string>
+	<string>3E8924B0-1B51-45EA-AF38-D5044F7C1C4C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@property-strong</string>
+	<string>@available</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
